@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRONUS</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="Sanjay Singh Bisht">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Common.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.css" />
+    <!--Select2 css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css" />
+    <!-- Datepicker css-->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css">
+    <!--Toastr css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+</head>
+<body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div class="header-section"></div>
+    <!-- Main-body start-->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <!-- <h4>Dashboard</h4> -->
+                </div>
+                <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="#!">
+                                <i class="icofont icofont-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Risk Measures</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Client Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="icon icon-minus-sign pull-right"></i>
+                                    Event Viewer
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs md-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#otti" role="tab" aria-expanded="true">OTTI</a>
+                                                <div class="slide"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#fig" role="tab" aria-expanded="false">FIG</a>
+                                                <div class="slide"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#cashflow" role="tab" aria-expanded="false">CASHFLOW</a>
+                                                <div class="slide"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#agencyoaCF" role="tab" aria-expanded="false">AGENCY OF CF</a>
+                                                <div class="slide"></div>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content card-block">
+                                            <div class="tab-pane active" id="otti" role="tabpanel" aria-expanded="true">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <div class="form-group">
+                                                                <label for="pricedate">Price Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="icofont icofont-ui-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <label for="pricedate">Price Date</label>
+                                                            <div class="form-radio">
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio" checked="checked">
+                                                                        <i class="helper "></i>File
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio">
+                                                                        <i class="helper"></i>List
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-6 col-xl-8">
+                                                            <label>Enter Cusip</label>
+                                                            <input type="text" class="form-control" placeholder="Comma[,] separated list of Cusip(s)" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-t-15">
+                                                        <div class="col-md-12 text-right">
+                                                            <button class="btn btn-primary">Run</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="fig" role="tabpanel" aria-expanded="false">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <div class="form-group">
+                                                                <label for="pricedate">Price Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="icofont icofont-ui-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <label for="pricedate">Price Date</label>
+                                                            <div class="form-radio">
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio" checked="checked">
+                                                                        <i class="helper "></i>File
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio">
+                                                                        <i class="helper"></i>List
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-6 col-xl-4">
+                                                            <label>Enter Cusip</label>
+                                                            <input type="text" class="form-control" placeholder="Comma[,] separated list of Cusip(s)" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-t-15">
+                                                        <div class="col-md-12 text-right">
+                                                            <button class="btn btn-primary">Run</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="cashflow" role="tabpanel" aria-expanded="false">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <label for="pricedate">File Type</label>
+                                                            <div class="form-radio">
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio">
+                                                                        <i class="helper "></i>Cusip
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio" checked="checked">
+                                                                        <i class="helper"></i>Account
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <div class="form-group">
+                                                                <label for="pricedate">Price Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="icofont icofont-ui-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <label for="pricedate">Type</label>
+                                                            <div class="form-radio">
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio">
+                                                                        <i class="helper "></i>File
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio" checked="checked">
+                                                                        <i class="helper"></i>List
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                            <label for="pricedate">Scenario</label>
+                                                            <div class="form-radio">
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio" checked="checked">
+                                                                        <i class="helper "></i>Desk Assumption
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio">
+                                                                        <i class="helper"></i>PM Assumption
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-12">
+                                                            <label>Enter Cusip</label>
+                                                            <input type="text" class="form-control" placeholder="Comma[,] separated list of Cusip(s)" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-t-15">
+                                                        <div class="col-md-12 text-right">
+                                                            <button class="btn btn-primary">Run</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="agencyoaCF" role="tabpanel" aria-expanded="false">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <div class="form-group">
+                                                                <label for="pricedate">Price Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="icofont icofont-ui-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-2">
+                                                            <label for="pricedate">Price Date</label>
+                                                            <div class="form-radio">
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio" checked="checked">
+                                                                        <i class="helper "></i>File
+                                                                    </label>
+                                                                </div>
+                                                                <div class="radio radio-inline">
+                                                                    <label>
+                                                                        <input type="radio" name="radio">
+                                                                        <i class="helper"></i>List
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-6 col-xl-8">
+                                                            <label>Enter Cusip</label>
+                                                            <input type="text" class="form-control" placeholder="Comma[,] separated list of Cusip(s)" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-t-15">
+                                                        <div class="col-md-12 text-right">
+                                                            <button class="btn btn-primary">Run</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <a role="button" aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="icon icon-minus-sign pull-right"></i>
+                                    Output
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-responsive">
+                                            <div class="dt-responsive table-responsive">
+                                                <table id="basic-btn-1" class="export-btn-table table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>PRICE DATE</th>
+                                                            <th>SUBMITTED BY</th>
+                                                            <th>SUBMISSION TIME</th>
+                                                            <th>STATUS</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>PRICE DATE</td>
+                                                            <td>SUBMITTED BY</td>
+                                                            <td>SUBMISSION TIME</td>
+                                                            <td>STATUS</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Main-body end-->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/tether/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../../bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="../../bower_components/classie/classie.js"></script>
+    <!-- data-table js -->
+    <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../../bower_components/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <!-- Common js -->
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!-- Datepicker js-->
+    <script type="text/javascript" src="assets/js/moment.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!--Toastr js-->
+    <script type="text/javascript" src="assets/js/toastr.js"></script>
+    <!-- Custom js -->
+    <script src="assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/pages-js/clientAnalytics.js"></script>
+</body>
+</html>

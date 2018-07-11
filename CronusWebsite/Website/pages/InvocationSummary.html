@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRONUS</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="Sanjay Singh Bisht">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Common.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.css" />
+    <!--Select2 css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css" />
+    <!-- Datepicker css-->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css">
+    <!--Toastr css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+</head>
+<body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div class="header-section"></div>
+    <!-- Main-body start-->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <!-- <h4>Dashboard</h4> -->
+                </div>
+                <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="#!">
+                                <i class="icofont icofont-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Reports</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Invocation Summary</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="row">
+                        <div class=" col-sm-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="icon icon-minus-sign pull-right"></i>
+                                            Invocation Summary
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse show pos-rel" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class=" loader-bg">
+                                    </div>
+                                    <div class="panel-body p-15 ">
+                                        <div class="loading-icon">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Tab panes -->
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="pricedate">Price Date</label>
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="icofont icofont-ui-calendar"></i>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-4">
+                                                            <div class="form-group">
+                                                                <label for="invocationid">Invocation ID</label>
+                                                                <div class="select2-dd"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-4 l-h-90">
+                                                            <div class="form-group">
+                                                                <div class="checkbox-fade fade-in-primary">
+                                                                    <label>
+                                                                        <input type="checkbox" value="">
+                                                                        <span class="cr">
+                                                                            <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                        </span>
+                                                                        <span class="text-inverse">Email Subscription</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <button type="button" id="status" class="btn btn-primary pull-right hidden waves-effect" data-toggle="modal" data-target="#default-Modal">Status</button>
+                                                            <button type="button" id="run" class="btn btn-danger pull-right m-r-5">Run</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <a role="button" aria-expanded="true" aria-controls="collapseTwo">
+                                            <i class="icon icon-plus-sign pull-right"></i>
+                                            Email Subscription
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseTwo">
+                                    <div class="panel-body p-15">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-radio">
+                                                    <form>
+                                                        <div class="radio radio-inline">
+                                                            <label>
+                                                                <input type="radio" name="radio" checked="checked">
+                                                                <i class="helper"></i>Subscribe All
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio radio-inline">
+                                                            <label>
+                                                                <input type="radio" name="radio">
+                                                                <i class="helper"></i>UnSubscribe All
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio radio-inline">
+                                                            <label>
+                                                                <input type="radio" name="radio">
+                                                                <i class="helper"></i>None
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <button type="submit" class="btn btn-danger pull-right">Save Preferences</button>
+                                            </div>
+                                        </div>
+                                        <div class="row m-t-20">
+                                            <div class="col-md-12">
+                                                <div class="dt-responsive table-responsive">
+                                                    <table id="basic-btn-1" class="table export-btn-table table-striped table-bordered nowrap">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>INVOCATION_ID</th>
+                                                                <th>SUBSCRIBE</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>op_fe_sv</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv1</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv2</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv3</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv4</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv5</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv6</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv7</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv8</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv9</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv10</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>op_fe_sv11</td>
+                                                                <td>
+                                                                    <div class="checkbox-fade fade-in-primary">
+                                                                        <label>
+                                                                            <input type="checkbox" value="">
+                                                                            <span class="cr">
+                                                                                <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                            </span>
+                                                                            <span class="text-inverse">Email Subscription</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Main-body end-->
+    <!--Modal Windows-->
+    <div class="modal fade" id="default-Modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg card" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Logs Detail</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body card-block">
+                    <h5>Static Modal</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Windows-->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/tether/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../../bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="../../bower_components/classie/classie.js"></script>
+    <!-- data-table js -->
+    <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../../bower_components/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <!-- Common js -->
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!-- Datepicker js-->
+    <script type="text/javascript" src="assets/js/moment.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!--Toastr js-->
+    <script type="text/javascript" src="assets/js/toastr.js"></script>
+    <!-- Custom js -->
+    <script src="assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/pages-js/invocationSummary.js"></script>
+</body>
+</html>

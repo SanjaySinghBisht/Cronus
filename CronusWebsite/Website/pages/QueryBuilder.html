@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRONUS</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="Sanjay Singh Bisht">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Common.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.css" />
+    <!--Select2 css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css" />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css">
+    <!--Toastr css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+    <!--Tokenfield css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/tokenfield/css/bootstrap-tokenfield.css" />
+</head>
+<body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <!--background-layout-->
+    <div class="background-layout"></div>
+    <!--background-layout-->
+    <div class="header-section"></div>
+    <!-- Main-body start-->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <!-- <p><i class="icofont icofont-disc m-r-10"></i>Sanjay Singh Bisht</p> -->
+                </div>
+                <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="#!">
+                                <i class="icofont icofont-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Database Utilities</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Query Builder</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="icon icon-minus-sign pull-right"></i>
+                                    Query Deatils
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="collapseOne">
+                            <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <button id="add-tab" type="button" class="btn btn-primary">
+                                            <i class="icofont icofont-plus-square"></i>
+                                            <span>Add Tab</span>
+                                        </button>
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#login-modal">Login</button>
+                                    </div>
+                                </div>
+                                <!-- Row start -->
+                                <div class="row m-t-10">
+                                    <div class="col-lg-12">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs query-tabs tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab">Tab1</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content  tabs tabs-container">
+                                            <div class="tab-pane active" id="tab1" role="tabpanel">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h4 class="section-heading">Jira Details</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <form action="#!" class="jira-details">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <div class="input-group input-group-button">
+                                                                        <input type="text" tabindex="1" class="form-control jiraId" placeholder="Jira ID">
+                                                                        <span class="input-group-addon" id="basic-addon10">
+                                                                            <button class="btn btn-primary">Search</button>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <input type="text" tabindex="2" class="form-control" placeholder="Summary">
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <label class="l-h-34">
+                                                                        <strong>Jira Status:</strong>
+                                                                        <span>InProgress</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <label class="l-h-34">
+                                                                        <strong>Beta Execution Status:</strong>
+                                                                        <span>Done</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <div tabindex="3" class="select2-dd"></div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <div tabindex="4" class="select2-dd"></div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <div tabindex="5" class="select2-dd"></div>
+                                                                </div>
+                                                                <div class="col-md-6 col-lg-3 col-sm-12">
+                                                                    <div tabindex="6" class="select2-dd"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row text-right">
+                                                                <div class="col-md-12">
+                                                                    <button type="button" tabindex="7" class="btn btn-danger">
+                                                                        <i class="icofont icofont-refresh"></i>
+                                                                        <span>Reset</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="8" class="btn btn-info">
+                                                                        <i class="icofont icofont-edit"></i>
+                                                                        <span>Edit</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="9" class="btn btn-success">
+                                                                        <i class="icofont icofont-hand-up"></i>
+                                                                        <span>Save</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="10" id="createJira" class="btn btn-primary">
+                                                                        <i class="icofont icofont-hand-up"></i>
+                                                                        <span>Create JIRA Ticket</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-15">
+                                                    <div class="col-sm-12">
+                                                        <form action="#!">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <label>Skip Beta Execution</label>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-radio inline-block">
+                                                                        <form>
+                                                                            <div class="radio radio-inline">
+                                                                                <label>
+                                                                                    <input class="popover-btn" tabindex="11" type="radio" checked name="radio">
+                                                                                    <i class="helper"></i>Yes
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="hidden popover-container">
+                                                                                <form action="#!" id="popForm" method="get">
+                                                                                    <div>
+                                                                                        <textarea rows="8" name="about" id="about" class="form-control input-md"></textarea>
+                                                                                        <button type="button" id="saveBtn" class="btn m-t-5 btn-primary">
+                                                                                            <i class="icofont icofont-check"></i> Save</button>
+                                                                                        <button type="button" id="cancelBtn" class="btn m-t-5 btn-danger">
+                                                                                            <i class="icofont icofont-close"></i> Cancel</button>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="radio radio-inline">
+                                                                                <label>
+                                                                                    <input type="radio" tabindex="12" name="radio">
+                                                                                    <i class="helper"></i>No
+                                                                                </label>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <label>Skip Approval</label>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-radio inline-block">
+                                                                        <form>
+                                                                            <div class="radio radio-inline">
+                                                                                <label>
+                                                                                    <input class="popover-btn" tabindex="13" type="radio" checked name="approval">
+                                                                                    <i class="helper"></i>Yes
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="radio radio-inline radio-disable">
+                                                                                <label>
+                                                                                    <input type="radio" tabindex="14" name="approval">
+                                                                                    <i class="helper"></i>No
+                                                                                </label>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-t-5">
+                                                                <div class="col-md-6 col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" tabindex="15" class="form-control" placeholder="Reason">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div tabindex="2" tabindex="16" class="select2-dd"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" tabindex="17" class="form-control" placeholder="Category">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <input type="text" tabindex="18" class="form-control" placeholder="Query Name">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <div class="col-sm-12">
+                                                                            <a class="full-screen">
+                                                                                <i class="icofont icofont-resize ft-20"></i>
+                                                                            </a>
+                                                                            <textarea rows="5" cols="5" tabindex="19" class="form-control min-h-142 form-control-variant" placeholder="Enter your query. Use semicolon(;) as a separator for multiple queries"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12 form-group col-md-6">
+                                                                            <input type="text" tabindex="20" class="form-control" placeholder="Expected rows effected eg 100">
+                                                                        </div>
+                                                                        <div class="col-sm-12 col-md-6">
+                                                                            <div tabindex="7" tabindex="21" class="select2-dd"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-sm-12 text-right">
+                                                                    <button class="btn btn-info">
+                                                                        <i class="icofont icofont-hand-up"></i>
+                                                                        <span>Save Query</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="22" class="btn btn-success">
+                                                                        <i class="icofont icofont-play-alt-2"></i>
+                                                                        <span>Execute</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="23" class="btn btn-primary">
+                                                                        <i class="icofont icofont-play-alt-2"></i>
+                                                                        <span>Commit</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="24" class="btn btn-danger">
+                                                                        <i class="icofont icofont-ui-reply"></i>
+                                                                        <span>Rollback</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <a role="button" aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="icon icon-minus-sign pull-right"></i> Output
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="collapseTwo">
+                            <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs md-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#resultsummary" role="tab" aria-expanded="true">Result Summary</a>
+                                                <div class="slide"></div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#resulttabs" role="tab" aria-expanded="false">Results</a>
+                                                <div class="slide"></div>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content card-block">
+                                            <div class="tab-pane active" id="resultsummary" role="tabpanel" aria-expanded="true">
+                                                <p class="text-success text-bold">
+                                                    <i>781 rows effected</i>
+                                                </p>
+                                                <p class="text-success text-bold">
+                                                    <i>234 rows effected</i>
+                                                </p>
+                                                <p class="text-success text-bold">
+                                                    <i>543 rows effected</i>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="resulttabs" role="tabpanel" aria-expanded="false">
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-12">
+                                                        <div>
+                                                            <table style="width: 100%" id="basic-btn-1" class="table export-btn-table table-striped table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>SCREENID</th>
+                                                                        <th>CONTEXT</th>
+                                                                        <th>KEY</th>
+                                                                        <th>VALUE</th>
+                                                                        <th>DESCRIPTION</th>
+                                                                        <th>LAST_CHG_USER</th>
+                                                                        <th>LAST_CHG_DATE</th>
+                                                                        <th>ENVIRONMENT</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> Risk Measure Override </td>
+                                                                        <td>Analytic_Id_Mapping</td>
+                                                                        <td>_Duration</td>
+                                                                        <td>manual_duration</td>
+                                                                        <td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td>
+                                                                        <td>SVC_OP</td>
+                                                                        <td>26/12/2018 08:52:46</td>
+                                                                        <td>(Null)</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Main-body end-->
+    <!--Login Popup Screen-->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-card card-block auth-body">
+                        <form class="md-float-material">
+                            <div class="auth-box">
+                                <div class="row">
+                                    <label class="col-sm-4 col-form-label">Database</label>
+                                    <div class="col-sm-8">
+                                        <div tabindex="2" class="select2-dd"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-sm-4 col-form-label">User</label>
+                                    <div class="col-sm-8">
+                                        <div tabindex="2" class="select2-dd"></div>
+                                    </div>
+                                </div>
+                                <div class="row m-t-10">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- end of form -->
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-default waves-effect " data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary waves-effect waves-light ">Save changes</button>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+    <!--Login Popup Screen-->
+    <div id="countdown"></div>
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/tether/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../../bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="../../bower_components/classie/classie.js"></script>
+    <!-- data-table js -->
+    <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../../bower_components/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <!-- Common js -->
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!--Toastr js-->
+    <script type="text/javascript" src="assets/js/toastr.js"></script>
+    <!-- Custom js -->
+    <!-- <script src="assets/pages/data-table/extensions/responsive/js/responsive-custom.js"></script> -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script>
+    <!--Tokenfield-->
+    <script type="text/javascript" src="../../bower_components/tokenfield/js/bootstrap-tokenfield.js"></script>
+    <script type="text/javascript" src="assets/js/pages-js/queryBuilder.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countdown360.js"></script>
+</body>
+</html>

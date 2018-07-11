@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRONUS</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="Sanjay Singh Bisht">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Common.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.css" />
+    <!--Select2 css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css" />
+    <!-- Datepicker css-->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    />
+    <!-- HandsonTable Css -->
+    <link rel="stylesheet" href="../../bower_components/handsontable/dist/handsontable.full.min.css"> 
+    <!--Toastr css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+</head>
+<body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end --> 
+    <div class="header-section"></div>
+    <!-- Main-body start-->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <!-- <h4>Dashboard</h4> -->
+                </div>
+                <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="#!">
+                                <i class="icofont icofont-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Configuration</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Agency Model Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group input-group-button">
+                                <input type="text" class="form-control" placeholder="Comma[,] separated list of SSM Ids">
+                                <span class="input-group-addon  bg-danger" id="basic-addon12">
+                                    <button class="btn btn-danger">
+                                        <i class="icofont icofont-search-alt-1"></i>
+                                        <span class="btn-text">Search</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <a role="button" aria-expanded="true" aria-controls="collapseTwo">
+                                    <i class="icon icon-minus-sign pull-right"></i>
+                                    Add / Update
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="agencyModalMap"></div>
+                                    </div>
+                                </div>
+                                <div class="row m-t-15">
+                                    <div class="col-md-12 text-right">
+                                        <button class="btn btn-danger">Delete</button>
+                                        <button class="btn btn-success">Add/Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Main-body end-->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/tether/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../../bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="../../bower_components/classie/classie.js"></script>
+    <!-- HandsonTable js -->
+    <script type="text/javascript" src="../../bower_components/handsontable/dist/handsontable.full.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../../bower_components/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <!-- Common js -->
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script> 
+    <!--Toastr js-->
+    <script type="text/javascript" src="assets/js/toastr.js"></script>  
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/pages-js/agencyModel.js"></script>
+</body>
+</html>

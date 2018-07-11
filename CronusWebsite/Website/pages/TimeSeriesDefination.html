@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRONUS</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="Sanjay Singh Bisht">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Common.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.css" />
+    <!--Select2 css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css" />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css">
+    <!--Toastr css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+    <!--FileInput css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap-fileinput/css/fileinput.css" />
+</head>
+<body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div class="header-section"></div>
+    <!-- Main-body start-->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <!-- <h4>Dashboard</h4> -->
+                </div>
+                <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="#!">
+                                <i class="icofont icofont-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Time Series</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Time Series Defination</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="icon icon-minus-sign pull-right"></i>
+                                    Time Series Defination
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                                    <div>
+                                                        <label for="group" class="required-field">Group</label>
+                                                        <div tabindex="1" class="select2-dd"></div>
+                                                        <!-- <small class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                                    <div>
+                                                        <label for="description">Description</label>
+                                                        <div tabindex="1" class="select2-dd"></div>
+                                                        <small class="form-text text-muted m-t--15"> CLASS SUBLCASS STRKEY2_NUMKEY3_NUMKEY4_NUMKEY5</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                                    <div>
+                                                        <label for="description">Description Output</label>
+                                                        <textarea class="form-control" rows="5" cols="5" disabled></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3">
+                                                    <div class="form-group">
+                                                        <label for="description">Browse CSV File</label>
+                                                        <input tabindex="5" class="file fileinput" multiple type="file">
+                                                        <small class="form-text text-muted m-t--15">Format of file should be.csv with following columns: prefix, sid,
+                                                            description, frequency_id, parent_id, strkey1, strkey2, strkey3,
+                                                            strkey4, strkey5, numkey1, numkey2, numkey3, numkey4, numkey5,
+                                                            suffix
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-12">
+                                                    <div class="">
+                                                        <label class="m-r-15" for="corpticker">Numkey's Behaving as Parents</label>
+                                                        <div class="checkbox-fade md-block fade-in-primary">
+                                                            <label>
+                                                                <input type="checkbox" value="">
+                                                                <span class="cr">
+                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                </span>
+                                                                <span class="text-inverse">NUMKEY1</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox-fade md-block fade-in-primary">
+                                                            <label>
+                                                                <input type="checkbox" value="">
+                                                                <span class="cr">
+                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                </span>
+                                                                <span class="text-inverse">NUMKEY2</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox-fade md-block fade-in-primary">
+                                                            <label>
+                                                                <input type="checkbox" value="">
+                                                                <span class="cr">
+                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                </span>
+                                                                <span class="text-inverse">NUMKEY3</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox-fade md-block fade-in-primary">
+                                                            <label>
+                                                                <input type="checkbox" value="">
+                                                                <span class="cr">
+                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                </span>
+                                                                <span class="text-inverse">NUMKEY4</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox-fade md-block fade-in-primary">
+                                                            <label>
+                                                                <input type="checkbox" value="">
+                                                                <span class="cr">
+                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                </span>
+                                                                <span class="text-inverse">NUMKEY5</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                        <div class="dt-responsive table-responsive">
+                                                            <table id="basic-btn-1" class="export-btn-table table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>GROUP_ID</th>
+                                                                        <th>SID</th>
+                                                                        <th>DESCRIPTION</th>
+                                                                        <th>FREQUENCY_ID</th>
+                                                                        <th>PARENT_ID</th>
+                                                                        <th>STRKEY1</th>
+                                                                        <th>STRKEY2</th>
+                                                                        <th>STRKEY3</th>
+                                                                        <th>STRKEY4</th>
+                                                                        <th>STRKEY5</th>
+                                                                        <th>NUMKEY1</th>
+                                                                        <th>NUMKEY2</th>
+                                                                        <th>NUMKEY3</th>
+                                                                        <th>NUMKEY4</th>
+                                                                        <th>NUMKEY5</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>981298</td>
+                                                                        <td>SDHSD122</td>
+                                                                        <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
+                                                                        <td>CBO-BKCL-ID</td>
+                                                                        <td>87877JHHJJH8</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>STRKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                        <td>NUMKEY</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-t-10">
+                                                <div class="col-md-12 text-right">
+                                                    <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                                                    <button type="submit" class="btn btn-danger pull-right m-r-5">Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Main-body end-->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/tether/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../../bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="../../bower_components/classie/classie.js"></script>
+    <!-- data-table js -->
+    <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../../bower_components/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <!--  FileInput js -->
+    <script type="text/javascript" src="../../bower_components/bootstrap-fileinput/js/fileinput.js"></script>
+    <!-- Common js -->
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!--Toastr js-->
+    <script type="text/javascript" src="assets/js/toastr.js"></script>
+    <!-- Custom js -->
+    <!-- <script src="assets/pages/data-table/extensions/responsive/js/responsive-custom.js"></script> -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script>
+    <script type="text/javascript" src="assets/js/pages-js/modalinputconfig.js"></script>
+</body>
+</html>

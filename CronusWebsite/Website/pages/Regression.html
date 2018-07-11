@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRONUS</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="Sanjay Singh Bisht">
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Menu-Search css -->
+    <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
+    <!-- Switch component css -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/switchery/dist/switchery.min.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Common.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
+    <!--Animate css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/animate.css/animate.css" />
+    <!--Select2 css-->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/select2/dist/css/select2.min.css" />
+    <!-- Datepicker css-->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="../../bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css">
+    <!--Toastr css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+    <!-- animation nifty modal window effects css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css">
+</head>
+<body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <!--background-layout-->
+    <div class="background-layout"></div>
+    <!--background-layout-->
+    <div class="header-section"></div>
+    <!-- Main-body start-->
+    <div class="main-body">
+        <div class="page-wrapper">
+            <div class="page-header">
+                <div class="page-header-title">
+                    <!-- <h4>Dashboard</h4> -->
+                </div>
+                <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="#!">
+                                <i class="icofont icofont-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Reports</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#!">Invocation Summary</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="row">
+                        <div class=" col-sm-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="icon icon-minus-sign pull-right"></i>
+                                            Filters
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse show pos-rel" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class=" loader-bg">
+                                    </div>
+                                    <div class="panel-body p-15 ">
+                                        <div class="loading-icon">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <!-- Tab panes -->
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-md-6 col-xl-2">
+                                                            <label for="pricedate">Price Date</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                <span class="input-group-addon">
+                                                                    <i class="icofont icofont-ui-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-xl-2">
+                                                            <label for="environment">Environment</label>
+                                                            <div class="select2-dd"></div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-xl-2">
+                                                            <label class="required-field" for="type">Type</label>
+                                                            <div class="form-radio">
+                                                                <form>
+                                                                    <div class="radio radio-inline">
+                                                                        <label>
+                                                                            <input type="radio" name="radio" checked="checked">
+                                                                            <i class="helper "></i>All Parc
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio radio-inline">
+                                                                        <label>
+                                                                            <input type="radio" name="radio">
+                                                                            <i class="helper"></i>All Pass
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="radio radio-inline">
+                                                                        <label>
+                                                                            <input class="popover-btn" type="radio" name="radio">
+                                                                            <i class="helper"></i>Invocation
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="hidden popover-container">
+                                                                        <form action="#!" id="popForm" method="get">
+                                                                            <div>
+                                                                                <div class="checkbox-fade fade-in-primary">
+                                                                                    <label>
+                                                                                        <input type="checkbox" value="">
+                                                                                        <span class="cr">
+                                                                                            <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                        </span>
+                                                                                        <span class="text-inverse">Application_Name_12349896667</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <div class="checkbox-fade fade-in-primary">
+                                                                                    <label>
+                                                                                        <input type="checkbox" value="">
+                                                                                        <span class="cr">
+                                                                                            <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                        </span>
+                                                                                        <span class="text-inverse">Application_Name_12349896667</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <div class="checkbox-fade fade-in-primary">
+                                                                                    <label>
+                                                                                        <input type="checkbox" value="">
+                                                                                        <span class="cr">
+                                                                                            <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                        </span>
+                                                                                        <span class="text-inverse">Application_Name_12349896667</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <div class="checkbox-fade fade-in-primary">
+                                                                                    <label>
+                                                                                        <input type="checkbox" value="">
+                                                                                        <span class="cr">
+                                                                                            <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                                        </span>
+                                                                                        <span class="text-inverse">Application_Name_12349896667</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <button type="button" id="saveBtn" class="btn m-t-5 btn-primary">
+                                                                                    <i class="icofont icofont-check"></i> Save</button>
+                                                                                <button type="button" id="cancelBtn" class="btn m-t-5 btn-danger">
+                                                                                    <i class="icofont icofont-close"></i> Cancel</button>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <textarea class="form-control"></textarea>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-xl-2">
+                                                            <label for="pricedate">Settle Date(-3)</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                <span class="input-group-addon">
+                                                                    <i class="icofont icofont-ui-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-xl-2">
+                                                            <label for="pricedate">Last Business Date</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                <span class="input-group-addon">
+                                                                    <i class="icofont icofont-ui-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-md-6 col-xl-2">
+                                                            <label for="pricedate">Less 10 Business Date(-10)</label>
+                                                            <div class="input-group">
+                                                                <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                                <span class="input-group-addon">
+                                                                    <i class="icofont icofont-ui-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <button type="button" id="run" class="btn btn-primary pull-right m-r-5">Run</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
+                                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        <a role="button" aria-expanded="true" aria-controls="collapseTwo">
+                                            <i class="icon icon-plus-sign pull-right"></i>
+                                            Stale Risk Measures
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseTwo">
+                                    <div class="panel-body p-15">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="dt-responsive table-responsive">
+                                                    <table id="basic-btn-1" class="table export-btn-table table-striped table-bordered nowrap">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>PRICE_DATE</th>
+                                                                <th>ENVIRONMENTS</th>
+                                                                <th>SUBMITTED DATE</th>
+                                                                <th>SUBMISSION TIME</th>
+                                                                <th>STATUS</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>PRICE_DATE</td>
+                                                                <td>ENVIRONMENTS</td>
+                                                                <td>SUBMITTED DATE</td>
+                                                                <td>SUBMISSION TIME</td>
+                                                                <td>
+                                                                    <a class="text-success md-trigger" data-modal="modal-12">Success</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PRICE_DATE</td>
+                                                                <td>ENVIRONMENTS</td>
+                                                                <td>SUBMITTED DATE</td>
+                                                                <td>SUBMISSION TIME</td>
+                                                                <td>
+                                                                    <a class="text-danger md-trigger" data-modal="modal-13">Failed</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PRICE_DATE</td>
+                                                                <td>ENVIRONMENTS</td>
+                                                                <td>SUBMITTED DATE</td>
+                                                                <td>SUBMISSION TIME</td>
+                                                                <td>
+                                                                    <a class="text-danger md-trigger" data-modal="modal-13">Failed</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>PRICE_DATE</td>
+                                                                <td>ENVIRONMENTS</td>
+                                                                <td>SUBMITTED DATE</td>
+                                                                <td>SUBMISSION TIME</td>
+                                                                <td>
+                                                                    <a class="text-success md-trigger" data-modal="modal-12">Success</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Add Contact Start Model -->
+    <div style="max-width: 90%; width:90%" class="md-modal  md-effect-13 addcontact" id="modal-13">
+        <div class="md-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <div class="dt-responsive table-responsive">
+                            <table id="basic-btn-2" class=" export-btn-table table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Failed Log</th>
+                                        <th class="none">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>/gsagjjsa/assaas/sa/as/sa//sa/as/asasasasas/sa/asasas/task.std.log</td>
+                                        <td>
+                                            <pre class="language-javascript"><code>// # List of new components
+        // ------------------------------
+        
+        
+        [new]  Change-log - (Change-log_sidebar_right.html)
+        
+        [new]  General pages - Feed layouts (general_feed.html)
+        [new]  General pages - Content widgets (general_widgets_content.html)
+        [new]  General pages - Responsive embeds (general_embeds.html)
+        
+        [new]  Service pages - Sitemap (service_sitemap.html)
+        
+        [new]  User pages - Tabbed profile (user_pages_profile_tabbed.html)
+        
+        [new]  Mailbox - Mail list (mail_list.html)
+        [new]  Mailbox - List with detached sidebar (layout 1 and 2) (mail_list_detached.html)
+        [new]  Mailbox - Read mail (mail_read.html)
+        [new]  Mailbox - Write mail (mail_write.html)
+        
+        [new]  Job search - Cards view (job_list_cards.html)
+        [new]  Job search - Panel view (job_list_panel.html)
+        [new]  Job search - Detailed view (job_detailed.html)
+        [new]  Job search - Apply (job_apply.html)
+        
+        [new]  Learning kit - List view (learning_list.html)
+        [new]  Learning kit - Grid view (learning_grid.html)
+        [new]  Learning kit - Detailed view (learning_detailed.html)
+        
+        
+        
+        // # List of updated plugins
+        // ------------------------------
+        
+        [updated]  Switchery library - switchery.min.js - to 0.8.2
+        [updated]  Touchspin spinners - touchspin.min.js - to 3.1.2
+        [updated]  Autosize extension - autosize.min.js - to 3.0.20
+        [updated]  Bootstrap Select - bootstrap_select.min.js to 1.12.1
+        [updated]  Moment.js - moment.min.js, moment_locales.min.js - to 2.17.1
+        
+        [updated]  Image Cropper - cropper.min.js - to 2.3.4
+        [updated]  Plupload file uploader - plupload bundle - to 2.2.1
+        [updated]  Bootstrap File Input library - fileinput.min.js to 4.3.7
+        
+        [updated]  Datatables library - datatables.min.js - to 1.10.13
+        [updated]  Autofill DT extention - autofill.min.js - to 2.1.3
+        [updated]  Buttons DT extention - buttons.min.js - to 1.2.4
+        [updated]  Key Table DT extention - key_table.min.js - to 2.2.0
+        [updated]  Row Reorder DT extention - row_reorder.min.js - to 1.2.0
+        
+        
+        
+        // # List of fixed
+        // ------------------------------
+        
+        [fixed]  Button with icon doesn't support checkboxes/radios
+        [fixed]  Float button - if text is too long, it wraps on the second line
+        [fixed]  Mini sidebar - in collapsed more, items with child levels have wrong right padding
+        [fixed]  Sidebar container bottom spacing fixes
+        [fixed]  In separate sidebar, panels and categories have double bottom spacing
+        [fixed]  Badge and label are transparent in active navigation item in default sidebar
+        [fixed]  Login and registration pages - password fields have wrong input types
+        [fixed]  Dropzone uploader - if uploader is not inside panel, background and border colors don't match
+        [fixed]  If responsive table goes after panel heading, table container and table itself need top border
+        [fixed]  Panel title doesn’t respect font size classes
+        [fixed]  Mini sidebar - children level dropdown in main navigation appears behind footer
+        [fixed]  Stacked media lists don't respect text alignment classes
+        [fixed]  If media object is displayed as panel body, it has extra top margin
+        [fixed]  Datatables fixed header - when click click sidebar control button, headers do not adjust to a new width
+        [fixed]  Anytime picker - empty cells are hidden in date grid
+        [fixed]  In material layout, multiple navbar buttons don't have horizontal spacing
+        [fixed]  FAB button in 5th layout has extra border
+        
+        [fixed]  RTL layout - Dropzone uploader adds extra horizontal space to body and scrollbar appears
+        [fixed]  RTL layout - default pace theme doesn't show up
+        
+        
+        
+        // # List of improvements
+        // ------------------------------
+        
+        [improved]  @table-cell-padding variable does not use padding variable
+        [improved]  Removed unused .icons-list-vertical class from html pages
+        [improved]  Removed unused .btn-slide class from html files
+        [improved]  Added inline list with vertical borders (.list-inline-bordered)
+        [improved]  Added group of block buttons (.btn-block-group)
+        [improved]  Added seamless row option which doesn't page spacing between columns (.row-seamless)
+        [improved]  Added border radius helpers (helpers.less)
+        [improved]  Added no-border option for jQuery UI datepicker if used inside panel
+        [improved]  Added class name for scrollable panel to limit panel viewport (.has-scroll)
+        [improved]  Added top border if panel has multiple bodies
+        [improved]  Added class name for slightly darker panel body (.panel-body-accent)
+        [improved]  Added nav tabs toolbar with grey background (.nav-tabs-toolbar)
+        [improved]  Improved navigation and file naming
+        </code></pre>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary waves-effect m-r-20 f-w-600 d-inline-block">Save</button>
+                <button type="button" class="btn btn-primary waves-effect m-r-20 f-w-600 md-close d-inline-block">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+    <!-- Add Contact Ends Model-->
+    <!-- Add Contact Start Model -->
+    <div style="max-width: 90%; width:90%" class="md-modal  md-effect-13 addcontact" id="modal-12">
+        <div class="md-content">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-xl-2">
+                    <div class="form-radio">
+                        <form>
+                            <div class="radio radio-inline">
+                                <label class="l-h-26">
+                                    <input type="radio" name="radio" checked="checked">
+                                    <i class="helper "></i>Difference
+                                </label>
+                            </div>
+                            <div class="radio radio-inline">
+                                <label class="l-h-26">
+                                    <input type="radio" name="radio">
+                                    <i class="helper"></i>Summary
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-xl-2">
+                    <div class="select2-dd"></div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-xl-2">
+                    <div class="select2-dd"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <div class="dt-responsive table-responsive">
+                            <table id="basic-btn-1" class=" export-btn-table table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse">Select All</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <th>PRICE DATE</th>
+                                        <th>CUSIP</th>
+                                        <th>CONTEXT</th>
+                                        <th>REGION CODE</th>
+                                        <th>REJECTION RULE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="checkbox-fade fade-in-primary">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    <span class="cr">
+                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                    </span>
+                                                    <span class="text-inverse"></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>83263726HJH</td>
+                                        <td>Rolldown</td>
+                                        <td>0.2871</td>
+                                        <td>12.2212</td>
+                                        <td>12.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary waves-effect m-r-20 f-w-600 d-inline-block">Save</button>
+                <button type="button" class="btn btn-primary waves-effect m-r-20 f-w-600 md-close d-inline-block">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+    <!-- Main-body end-->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/tether/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="../../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="../../bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="../../bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+    <!-- classie js -->
+    <script type="text/javascript" src="../../bower_components/classie/classie.js"></script>
+    <!-- Switch component js -->
+    <script type="text/javascript" src="../../bower_components/switchery/dist/switchery.min.js"></script>
+    <!-- data-table js -->
+    <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../../bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../bower_components/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="../../bower_components/i18next/i18next.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+    <script type="text/javascript" src="../../bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <!-- Common js -->s
+    <script type="text/javascript" src="assets/js/common.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
+    <!-- Datepicker js-->
+    <script type="text/javascript" src="assets/js/moment.js"></script>
+    <script type="text/javascript" src="../../bower_components/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!--Toastr js-->
+    <script type="text/javascript" src="assets/js/toastr.js"></script>
+    <!-- Custom js -->
+    <script src="assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/pages-js/regression.js"></script>
+    <script type="text/javascript" src="../../bower_components/switchery/dist/switchery.min.js"></script>
+    <script src="assets/js/buttons.colVis.js"></script>
+    <!-- Model animation js -->
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/modalEffects.js"></script>
+</body>
+</html>
