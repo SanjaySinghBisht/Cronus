@@ -563,7 +563,7 @@ span[class*="bg-"]:hover button {
 }
 
 .md-effect-13 .md-content {
-    max-height: 900px;
+    max-height: 600px;
     overflow: auto;
 }
 

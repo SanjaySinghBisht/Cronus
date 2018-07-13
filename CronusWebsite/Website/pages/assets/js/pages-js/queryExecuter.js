@@ -96,4 +96,60 @@ $(document).ready(function () {
             console.log('done')
         }
     }).start()
+    Highcharts.chart('result', {
+        exporting: {
+            enabled: false
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Rows Effected'
+        },
+        xAxis: {
+            categories: ['tab1', 'tab2', 'tab3', 'tab4', 'tab5', 'tab6', 'tab7', 'tab8', 'tab9'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Count (millions)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' hundred'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            enabled: true,
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Rows Effected',
+            data: [678, 345, 76, 876, 234, 987, 123, 90, 23, 678, 54]
+        }]
+    });
 });
