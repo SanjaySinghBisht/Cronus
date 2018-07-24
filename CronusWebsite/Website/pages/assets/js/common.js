@@ -340,7 +340,7 @@ $(document).ready(function () {
                 $("<a>", {
                     href: itemData.link,
                     html: itemData.icon + itemData.name
-                }),
+                })
             );
         $("<li class='nav-item'> a").append(itemData.icon);
         if (itemData.sub) {
