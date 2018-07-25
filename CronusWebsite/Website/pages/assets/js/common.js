@@ -366,14 +366,12 @@ $(document).ready(function () {
     function findObjectByKey(data, link, currentUrl) {
         for (var i = 0; i < data.menu.length; i++) {
             if (data.menu[i].link.toLowerCase() == currentUrl) {
-                // console.log(data.menu[i].menucounter);
                 $('.main-menu-content > .main-navigation > li:nth-child(' + data.menu[i].menucounter + ')').addClass('has-class');
                 return false;
             }
             if (data.menu[i].sub != null) {
                 for (var j = 0; j < data.menu[i].sub.length; j++) {
                     if (data.menu[i].sub[j].link.toLowerCase() == currentUrl) {
-                        // console.log(data.menu[i].sub[j].menucounter);
                         $('.main-menu-content > .main-navigation > li:nth-child(' + data.menu[i].sub[j].menucounter + ')').addClass('has-class');
                         return false;
                     }

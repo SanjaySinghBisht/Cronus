@@ -626,6 +626,10 @@ span[class*="bg-"]:hover button {
     display: inline-block;
     float: right;
 }
+textarea[class*="copyPaste"]{
+    position: fixed;
+    visibility: hidden;
+}
 @media (max-width:480px) {
     .btn {
         width: 100%;
