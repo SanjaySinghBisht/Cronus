@@ -28,7 +28,10 @@ $(document).ready(function () {
         <i class="icofont icofont-ui-reply"></i>\
         <span class="btn-text">Rollback</span>\
         </button>\
-        </div></div></div></div></form></div></div></div>').insertAfter(".tabs-container > div.tab-pane:last-child");
+        </div></div></form></div></div>\
+        <div class="row m-t-15"><div class="col-sm-12"><h5 class="output-header">Output<span class="rows-effected">Rows Effected: 234</span></h5></div><div class="col-md-12 m-t-15"><div><table style="width: 100%" id="basic-btn-' +
+        count +'" class="basic-btn-1 table export-btn-table table-striped table-bordered"><thead><tr><th>SCREENID</th><th>CONTEXT</th><th>KEY</th><th>VALUE</th><th>DESCRIPTION</th><th>LAST_CHG_USER</th><th>LAST_CHG_DATE</th><th>ENVIRONMENT</th></tr></thead><tbody><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr><tr><td> Risk Measure Override </td><td>Analytic_Id_Mapping</td><td>_Duration</td><td>manual_duration</td><td>{PROVIDE_ID}_{RISK_MEASURE VALUE-ANALYTIC_ID}</td><td>SVC_OP</td><td>26/12/2018 08:52:46</td><td>(Null)</td></tr></tbody></table></div></div></div></div>'
+    ).insertAfter(".tabs-container > div.tab-pane:last-child");
         $(".select2-dd").select2({
             placeholder: "Select",
             allowClear: true
@@ -39,6 +42,12 @@ $(document).ready(function () {
             html: true,
             content: $('.popover-container').html()
         });
+        $(".basic-btn-1").DataTable({
+            destroy: true,
+            dom: "Bfrtip",
+            buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"],
+            responsive: true
+          });
     })
     /*Add tabs dynamically in Query Executer */
     $(".background-layout").css("min-height", $(document).height());
@@ -47,15 +56,25 @@ $(document).ready(function () {
         $(".background-layout").show();
         $("body").css("overflow", "hidden");
     });
-    $(document).on("click", "#saveBtn,#cancelBtn", function () {
-        $('.popover-btn').attr('disabled', false);
-        $(".background-layout").hide();
-        $("body").css("overflow", "auto");
-        $('.popover-btn').popover('hide');
-    });
+    $(document).on("click", "#saveBtn,#cancelBtn", function() {
+        let test = $(".popover #about").val();
+        if ($(".popover #about").val() == "") {
+          $(".popover-btn").prop("disabled", false);
+          $(".popover-btn").prop("checked", false);
+          $(".background-layout").hide();
+          $("body").css("overflow", "auto");
+          $(".popover-btn").popover("hide");
+        } else {
+          $(".popover-btn").prop("disabled", false);
+          $(".background-layout").hide();
+          $("body").css("overflow", "auto");
+          $(".popover-btn").popover("hide");
+        }
+      }); 
     var width = $(window).width();
     if (width <= 768) {
-        $('#basic-btn-1').DataTable({
+        $('.basic-btn-1').DataTable({
+            destroy: true,
             responsive: true,
             dom: 'Bfrtip',
             buttons: [
@@ -68,7 +87,8 @@ $(document).ready(function () {
             }
         });
     } else {
-        $('#basic-btn-1').DataTable({
+        $('.basic-btn-1').DataTable({
+            destroy: true,
             responsive: true,
             dom: 'Bfrtip',
             buttons: [

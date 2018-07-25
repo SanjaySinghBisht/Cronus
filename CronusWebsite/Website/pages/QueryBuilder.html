@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>CRONUS</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
@@ -14,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="description">
     <meta name="keywords">
-     <meta name="author" content="Sanjay Singh Bisht">
+    <meta name="author" content="Sanjay Singh Bisht">
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
@@ -46,6 +47,7 @@
     <!--Tokenfield css-->
     <link rel="stylesheet" type="text/css" href="../../plugins/tokenfield/css/bootstrap-tokenfield.css" />
 </head>
+
 <body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
     <!-- Pre-loader start -->
     <div class="theme-loader">
@@ -57,7 +59,9 @@
     <!--background-layout-->
     <div class="background-layout"></div>
     <!--background-layout-->
-    <!-- Pre-Header Start -->     <div class="header-section"></div>     <!-- Pre-Header Ends -->
+    <!-- Pre-Header Start -->
+    <div class="header-section"></div>
+    <!-- Pre-Header Ends -->
     <!-- Main-body start-->
     <div class="main-body">
         <div class="page-wrapper">
@@ -197,7 +201,7 @@
                                                                         <form>
                                                                             <div class="radio radio-inline">
                                                                                 <label>
-                                                                                    <input class="popover-btn" tabindex="11" type="radio" checked name="radio">
+                                                                                    <input class="popover-btn" tabindex="11" type="radio" name="radio">
                                                                                     <i class="helper"></i>Yes
                                                                                 </label>
                                                                             </div>
@@ -229,11 +233,11 @@
                                                                         <form>
                                                                             <div class="radio radio-inline">
                                                                                 <label>
-                                                                                    <input class="popover-btn" tabindex="13" type="radio" checked name="approval">
+                                                                                    <input class="popover-btn" tabindex="13" type="radio" name="approval">
                                                                                     <i class="helper"></i>Yes
                                                                                 </label>
                                                                             </div>
-                                                                            <div class="radio radio-inline radio-disable">
+                                                                            <div class="radio radio-inline">
                                                                                 <label>
                                                                                     <input type="radio" tabindex="14" name="approval">
                                                                                     <i class="helper"></i>No
@@ -308,56 +312,13 @@
                                                         </form>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Row end -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
-                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                <a role="button" aria-expanded="true" aria-controls="collapseTwo">
-                                    <i class="icon icon-minus-sign pull-right"></i> Output
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="collapseTwo">
-                            <div class="panel-body p-15">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs md-tabs" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" href="#resultsummary" role="tab" aria-expanded="true">Result Summary</a>
-                                                <div class="slide"></div>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#resulttabs" role="tab" aria-expanded="false">Results</a>
-                                                <div class="slide"></div>
-                                            </li>
-                                        </ul>
-                                        <!-- Tab panes -->
-                                        <div class="tab-content card-block">
-                                            <div class="tab-pane active" id="resultsummary" role="tabpanel" aria-expanded="true">
-                                                <div id="result"></div>
-                                                <!-- <p class="text-success text-bold">
-                                                    <i>781 rows effected</i>
-                                                </p>
-                                                <p class="text-success text-bold">
-                                                    <i>234 rows effected</i>
-                                                </p>
-                                                <p class="text-success text-bold">
-                                                    <i>543 rows effected</i>
-                                                </p> -->
-                                            </div>
-                                            <div class="tab-pane" id="resulttabs" role="tabpanel" aria-expanded="false">
-                                                <div class="row m-t-20">
-                                                    <div class="col-md-12">
+                                                <div class="row m-t-15">
+                                                    <div class="col-sm-12">
+                                                        <h5 class="output-header">Output <span class="rows-effected">Rows Effected: 234</span></h5>
+                                                    </div>
+                                                    <div class="col-md-12 m-t-15">
                                                         <div>
-                                                            <table style="width: 100%" id="basic-btn-1" class="table export-btn-table table-striped table-bordered">
+                                                            <table style="width: 100%" id="basic-btn-1" class="basic-btn-1 table export-btn-table table-striped table-bordered">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>SCREENID</th>
@@ -490,6 +451,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Row end -->
                             </div>
                         </div>
                     </div>
@@ -584,9 +546,6 @@
     <script type="text/javascript" src="../../plugins/tokenfield/js/bootstrap-tokenfield.js"></script>
     <script type="text/javascript" src="assets/js/pages-js/queryBuilder.js"></script>
     <script type="text/javascript" src="assets/js/jquery.countdown360.js"></script>
-    <!-- Highcharts js -->
-    <script type="text/javascript" src="assets/js/highcharts.js"></script>
-    <script type="text/javascript" src="assets/js/exporting.js"></script>
-    <script type="text/javascript" src="assets/js/export-data.js"></script>
 </body>
+
 </html>

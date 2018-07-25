@@ -616,6 +616,16 @@ span[class*="bg-"]:hover button {
     margin-right: 10px !important;
 }
 
+.output-header{
+    background: #5b5f63;
+    padding: 15px;
+    color: #fff;
+    border-radius: 2px;
+}
+.rows-effected{
+    display: inline-block;
+    float: right;
+}
 @media (max-width:480px) {
     .btn {
         width: 100%;
