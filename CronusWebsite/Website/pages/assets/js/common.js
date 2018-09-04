@@ -331,6 +331,27 @@ $(document).ready(function () {
                 ],
                 icon: '<i class="icofont icofont-settings"></i>',
                 menucounter: '7'
+            },
+            {
+                name: 'Impact Study',
+                link: 'Userdashboard.html',
+                sub: [{
+                        name: 'User Dashboard',
+                        link: 'Userdashboard.html',
+                        sub: null,
+                        menucounter: '8',
+                        icon: '<i class="icofont icofont-business-man-alt-2"></i>'
+                    },
+                    {
+                        name: 'Admin Dashboard',
+                        link: 'Admindashboard.html',
+                        sub: null,
+                        menucounter: '8',
+                        icon: '<i class="icofont icofont-business-man"></i>'
+                    } 
+                ],
+                icon: '<i class="icofont icofont-architecture-alt"></i>',
+                menucounter: '8'
             }
         ]
     }
@@ -387,3 +408,5 @@ $(window).on("load", function () {
     $(".export-btn-table").parents(".dataTables_wrapper").find(".dataTables_filter").addClass("full-width-search");
     /*Add class in search section for datatabes with buttons */
 })
+
+

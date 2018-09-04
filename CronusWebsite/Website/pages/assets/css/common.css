@@ -453,7 +453,7 @@ input.htCheckboxRendererInput:checked:after {
     width: 100%;
 }
 
-.jira-details {
+.jira-details,.database-snapshot {
     padding: 20px;
     border: 1px dashed #96cb83;
     background: #f6fff3;
@@ -611,24 +611,34 @@ span[class*="bg-"]:hover button {
     text-align: left !important;
 }
 
-.main-navigation .nav-item .tree-1 .nav-item a i{
+.main-navigation .nav-item .tree-1 .nav-item a i {
     display: inline-block !important;
     margin-right: 10px !important;
 }
 
-.output-header{
+.output-header {
     background: #5b5f63;
     padding: 15px;
     color: #fff;
     border-radius: 2px;
 }
-.rows-effected{
+
+.rows-effected {
     display: inline-block;
     float: right;
 }
-textarea[class*="copyPaste"]{
+
+textarea[class*="copyPaste"] {
     position: fixed;
     visibility: hidden;
+}
+
+.impact-study-form{
+    display: none;
+}
+
+.input-textarea{
+    max-height: 32px;
 }
 @media (max-width:480px) {
     .btn {

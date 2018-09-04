@@ -26,7 +26,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataT
     box-sizing: content-box;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    line-height: 14px;
+    line-height: 16px;
     content: '+';
     background-color: #0275d8
 }
