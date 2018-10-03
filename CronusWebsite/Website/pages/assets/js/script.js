@@ -17,11 +17,11 @@ $(document).ready(function() {
     MenuLayout();
     setMenuLayout();
 
-    // $(window).on('resize', function() {
-    //     setMenu();
-    //     setMenuLayout();
+    $(window).on('resize', function() {
+        setMenu();
+        setMenuLayout();
 
-    // });
+    });
 
     //mobile menu start
     function setMenu() {

@@ -303,7 +303,7 @@ header h1 {
     font-weight: 400;
   }
   .cd-timeline-block:nth-child(odd) .cd-timeline-content {
-    float: right;
+    float: right; 
   }
   .cd-timeline-block:nth-child(odd) .cd-timeline-content::before {
     top: 24px;

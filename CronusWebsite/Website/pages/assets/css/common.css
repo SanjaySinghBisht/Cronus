@@ -651,6 +651,12 @@ textarea[class*="copyPaste"] {
     button.dt-button, div.dt-button, a.dt-button {
         padding: 0.5em 0.5em !important;
     }
+    .tree-1.open{
+        padding-left: 15px;
+    }
+    .tree-1.open a:after{
+        content: none;
+    }
 }
 
 @media (min-width:320px) and (max-width: 767px) {
@@ -723,6 +729,12 @@ textarea[class*="copyPaste"] {
     }
     .high-charts {
         max-width: 280px;
+    }
+    .tree-1.open{
+        padding-left: 15px;
+    }
+    .tree-1.open a:after{ 
+        content: none;
     }
 }
 
