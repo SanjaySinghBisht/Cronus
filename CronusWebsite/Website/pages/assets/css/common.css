@@ -663,7 +663,44 @@ textarea[class*="copyPaste"] {
     border-color: #28e1bd; 
 }
 /*search input*/
+/*Pastel colors*/
+.pastel-bg{
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 4px 7px;
+    margin-right: 5px;
+    color: #3e3e3e !important;
+}
+.pastel-purple{
+    background: #a3b5fd
+}
+.pastel-indigo{
+    background: #c3c5f8
+}
+.pastel-blue{
+    background: #b3eef6
+}
+.pastel-pink{
+    background: #ffc3df
+}
+.pastel-red{
+    background: #e49aab
+}
+.pastel-green{
+    background: #b3ddd1
+}
+.pastel-orange{
+    background: #f5b994
+}
 @media (max-width:480px) {
+    .row-status .label-main{
+        display: block;
+    }
+
+    .row-status .label-main .label{
+        width: 100%
+    }
+
     .btn {
         width: 100%;
         margin: 5px 0px;

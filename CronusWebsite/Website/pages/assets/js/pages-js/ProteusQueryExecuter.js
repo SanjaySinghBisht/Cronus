@@ -26,4 +26,25 @@ $(document).ready(function() {
         .removeClass("col-md-6");
     }
   });
+  var width = $(window).width();
+  if (width <= 768) {
+    $(".basic-btn-1").DataTable({
+      destroy: true,
+      dom: "Bfrtip",
+      buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"],
+      responsive: true,
+      oLanguage: {
+        sLengthMenu: " _MENU_ ",
+        sSearch: "",
+        sSearchPlaceholder: "Search"
+      }
+    });
+  } else {
+    $(".basic-btn-1").DataTable({
+      destroy: true,
+      dom: "Bfrtip",
+      buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"],
+      responsive: true
+    });
+  }
 });

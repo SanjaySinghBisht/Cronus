@@ -251,117 +251,163 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-md-2 l-h-90 text-right">
-                                                            <button type="submit" class="btn btn-primary m-r-5">Submit </button>
+                                                            <button class="btn btn-primary">
+                                                                <i class="icofont icofont-search"></i>
+                                                                <span class="btn-text">Search</span>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>
                                                 <div class="clearfix"></div>
                                                 <div class="divider"></div>
-                                                <div class="table-responsive pos-rel">
-                                                    <a class="expand-collapse-row p-10" href="#!">
-                                                        <i class="icofont icofont-circled-up"></i>
-                                                    </a>
-                                                    <div class="dt-responsive table-responsive">
-                                                        <table id="basic-btn-1" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                <div class="row">
+                                                    <div class="col-md-12 row-status">
+                                                        <div class="label-main">
+                                                            <label class="pastel-bg pastel-purple">Committed in Shadow</label>
+                                                        </div>
+                                                        <div class="label-main">
+                                                            <label class="pastel-bg pastel-indigo">Approval Pending</label>
+                                                        </div>
+                                                        <div class="label-main">
+                                                            <label class="pastel-bg pastel-blue">Approved</label>
+                                                        </div>
+                                                        <div class="label-main">
+                                                            <label class="pastel-bg pastel-green">Committed in Prod</label>
+                                                        </div>
+                                                        <div class="label-main">
+                                                            <label class="pastel-bg pastel-red">Rejected</label>
+                                                        </div>
+                                                        <div class="label-main">
+                                                                <label class="pastel-bg pastel-pink">Ignored</label>
+                                                        </div>
+                                                        <div class="label-main">
+                                                            <label class="pastel-bg pastel-orange">Error in Execution</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 m-t-15">
+                                                        <table style="width: 100%" id="basic-btn-1" class="basic-btn-1 table export-btn-table table-striped table-bordered">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>LEVEL</th>
-                                                                    <th>ENVIRONMENT</th>
-                                                                    <th>URL</th>
-                                                                    <th>DATE</th>
-                                                                    <th>MESSAGE</th>
-                                                                    <th>USER</th>
-                                                                    <th>EXPAND</th>
+                                                                    <th>Request ID</th>
+                                                                    <th>Query Group</th>
+                                                                    <th>Requester</th>
+                                                                    <th>Approver</th>
+                                                                    <th>Summary</th>
+                                                                    <th>Status</th>
+                                                                    <th>Created On</th>
+                                                                    <th>Created By</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
+                                                                    <td> 787 </td>
                                                                     <td>
-                                                                        <span class="text-success">
-                                                                            <strong>Success</strong>
-                                                                        </span>
-                                                                    </td>
-                                                                    <td>Production</td>
-                                                                    <td>http://www.google.com</td>
-                                                                    <td>12/12/2018</td>
-                                                                    <td class="message-body">
-                                                                        <span>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsum Lorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsumLorem ipsum lorem ipsum
-                                                                        </span>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
                                                                     </td>
                                                                     <td>Sanjay Singh Bisht</td>
-                                                                    <td>
-                                                                        <a class="expand-data" href="#!">
-                                                                            <i class="icofont icofont-eye-alt"></i>
-                                                                        </a>
-                                                                    </td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
                                                                 </tr>
                                                                 <tr>
+                                                                    <td> 787 </td>
                                                                     <td>
-                                                                        <span class="text-warning">
-                                                                            <strong>Warning</strong>
-                                                                        </span>
-                                                                    </td>
-                                                                    <td>Production</td>
-                                                                    <td>http://www.google.com</td>
-                                                                    <td>12/12/2018</td>
-                                                                    <td class="message-body">
-                                                                        <span>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsum Lorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsumLorem ipsum lorem ipsum
-                                                                        </span>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
                                                                     </td>
                                                                     <td>Sanjay Singh Bisht</td>
-                                                                    <td>
-                                                                        <a class="expand-data" href="#!">
-                                                                            <i class="icofont icofont-eye-alt"></i>
-                                                                        </a>
-                                                                    </td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
                                                                 </tr>
                                                                 <tr>
+                                                                    <td> 787 </td>
                                                                     <td>
-                                                                        <span class="text-info">
-                                                                            <strong>Info</strong>
-                                                                        </span>
-                                                                    </td>
-                                                                    <td>Production</td>
-                                                                    <td>http://www.google.com</td>
-                                                                    <td>12/12/2018</td>
-                                                                    <td class="message-body">
-                                                                        <span>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsum Lorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsumLorem ipsum lorem ipsum
-                                                                        </span>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
                                                                     </td>
                                                                     <td>Sanjay Singh Bisht</td>
-                                                                    <td>
-                                                                        <a class="expand-data" href="#!">
-                                                                            <i class="icofont icofont-eye-alt"></i>
-                                                                        </a>
-                                                                    </td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
                                                                 </tr>
                                                                 <tr>
+                                                                    <td> 787 </td>
                                                                     <td>
-                                                                        <span class="text-danger">
-                                                                            <strong>Error</strong>
-                                                                        </span>
-                                                                    </td>
-                                                                    <td>Production</td>
-                                                                    <td>http://www.google.com</td>
-                                                                    <td>12/12/2018</td>
-                                                                    <td class="message-body">
-                                                                        <span>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsum Lorem ipsum lorem ipsumLorem
-                                                                            ipsum lorem ipsumLorem ipsum lorem ipsum
-                                                                        </span>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
                                                                     </td>
                                                                     <td>Sanjay Singh Bisht</td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 787 </td>
                                                                     <td>
-                                                                        <a class="expand-data" href="#!">
-                                                                            <i class="icofont icofont-eye-alt"></i>
-                                                                        </a>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
                                                                     </td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 787 </td>
+                                                                    <td>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
+                                                                    </td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 787 </td>
+                                                                    <td>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
+                                                                    </td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 787 </td>
+                                                                    <td>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
+                                                                    </td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td> 787 </td>
+                                                                    <td>
+                                                                        <a href="javascript:void(0)">PROD Test</a>
+                                                                    </td>
+                                                                    <td>Sanjay Singh Bisht</td>
+                                                                    <td></td>
+                                                                    <td>Prod code verifictaion</td>
+                                                                    <td>Committed in Shadow</td>
+                                                                    <td>10-08-2018 11:12:44PM</td>
+                                                                    <td>Sanjay Singh Bisht</td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
