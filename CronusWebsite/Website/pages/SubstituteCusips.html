@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>CRONUS</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
@@ -14,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="description">
     <meta name="keywords">
-   <meta name="author" content="Sanjay Singh Bisht">
+    <meta name="author" content="Sanjay Singh Bisht">
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
@@ -48,6 +49,7 @@
     <!-- HandsonTable Css -->
     <link rel="stylesheet" href="../../plugins/handsontable/dist/handsontable.full.min.css">
 </head>
+
 <body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
     <!-- Pre-loader start -->
     <div class="theme-loader">
@@ -56,7 +58,9 @@
         </div>
     </div>
     <!-- Pre-loader end -->
-    <!-- Pre-Header Start -->     <div class="header-section"></div>     <!-- Pre-Header Ends -->
+    <!-- Pre-Header Start -->
+    <div class="header-section"></div>
+    <!-- Pre-Header Ends -->
     <!-- Main-body start-->
     <div class="main-body">
         <div class="page-wrapper">
@@ -118,8 +122,14 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xs-12 col-md-6 col-lg-4 text-right l-h-90">
-                                                            <button class="btn btn-primary">Save</button>
-                                                            <button class="btn btn-danger">Reset</button>
+                                                            <button class="btn btn-primary">
+                                                                <i class="icofont icofont-hand-up"></i>
+                                                                <span>Save</span>
+                                                            </button>
+                                                            <button class="btn btn-warning">
+                                                                <i class="icofont icofont-refresh"></i>
+                                                                <span>Reset</span>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -144,14 +154,14 @@
                                             <div class="col-md-12">
                                                 <div class="input-group input-group-button">
                                                     <input type="text" class="form-control" placeholder="Comma[,] separeted list of Cusips">
-                                                    <span class="input-group-addon bg-danger" id="basic-addon12">
-                                                        <button class="btn btn-danger">
+                                                    <span class="input-group-addon bg-primary" id="basic-addon12">
+                                                        <button class="btn btn-primary">
                                                             <i class="icofont icofont-search-alt-1"></i>
                                                             <span class="btn-text">Search</span>
                                                         </button>
                                                     </span>
-                                                    <span class="input-group-addon bg-primary" id="basic-addon12">
-                                                        <button class="btn btn-primary">
+                                                    <span class="input-group-addon bg-success" id="basic-addon12">
+                                                        <button class="btn btn-success">
                                                             <i class="icofont icofont-listing-box"></i>
                                                             <span class="btn-text">Show All</span>
                                                         </button>
@@ -400,4 +410,5 @@
     <script src="assets/js/classie.js"></script>
     <script src="assets/js/modalEffects.js"></script>
 </body>
+
 </html>

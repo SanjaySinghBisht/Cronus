@@ -1241,12 +1241,12 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .md-tabs .nav-item .nav-link.active~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-1 a .nav-link.active~.slide, .main-menu .main-menu-content .nav-item .tree-1 .md-tabs a .nav-link.active~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-2 a .nav-link.active~.slide, .main-menu .main-menu-content .nav-item .tree-2 .md-tabs a .nav-link.active~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-3 a .nav-link.active~.slide, .main-menu .main-menu-content .nav-item .tree-3 .md-tabs a .nav-link.active~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-4 a .nav-link.active~.slide, .main-menu .main-menu-content .nav-item .tree-4 .md-tabs a .nav-link.active~.slide {
     opacity: 1;
-    transition: all 0.3s ease-out
+    transition: all 0.1s ease-out
 }
 
 .md-tabs .nav-item .nav-link~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-1 a .nav-link~.slide, .main-menu .main-menu-content .nav-item .tree-1 .md-tabs a .nav-link~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-2 a .nav-link~.slide, .main-menu .main-menu-content .nav-item .tree-2 .md-tabs a .nav-link~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-3 a .nav-link~.slide, .main-menu .main-menu-content .nav-item .tree-3 .md-tabs a .nav-link~.slide, .md-tabs .main-menu .main-menu-content .nav-item .tree-4 a .nav-link~.slide, .main-menu .main-menu-content .nav-item .tree-4 .md-tabs a .nav-link~.slide {
     opacity: 0;
-    transition: all 0.3s ease-out
+    transition: all 0.1s ease-out
 }
 
 .md-tabs .nav-item.open .nav-link, .md-tabs .main-menu .main-menu-content .nav-item .tree-1 a.open .nav-link, .main-menu .main-menu-content .nav-item .tree-1 .md-tabs a.open .nav-link, .md-tabs .main-menu .main-menu-content .nav-item .tree-2 a.open .nav-link, .main-menu .main-menu-content .nav-item .tree-2 .md-tabs a.open .nav-link, .md-tabs .main-menu .main-menu-content .nav-item .tree-3 a.open .nav-link, .main-menu .main-menu-content .nav-item .tree-3 .md-tabs a.open .nav-link, .md-tabs .main-menu .main-menu-content .nav-item .tree-4 a.open .nav-link, .main-menu .main-menu-content .nav-item .tree-4 .md-tabs a.open .nav-link, .md-tabs .nav-item.open .nav-link:focus, .md-tabs .main-menu .main-menu-content .nav-item .tree-1 a.open .nav-link:focus, .main-menu .main-menu-content .nav-item .tree-1 .md-tabs a.open .nav-link:focus, .md-tabs .main-menu .main-menu-content .nav-item .tree-2 a.open .nav-link:focus, .main-menu .main-menu-content .nav-item .tree-2 .md-tabs a.open .nav-link:focus, .md-tabs .main-menu .main-menu-content .nav-item .tree-3 a.open .nav-link:focus, .main-menu .main-menu-content .nav-item .tree-3 .md-tabs a.open .nav-link:focus, .md-tabs .main-menu .main-menu-content .nav-item .tree-4 a.open .nav-link:focus, .main-menu .main-menu-content .nav-item .tree-4 .md-tabs a.open .nav-link:focus, .md-tabs .nav-item.open .nav-link:hover, .md-tabs .main-menu .main-menu-content .nav-item .tree-1 a.open .nav-link:hover, .main-menu .main-menu-content .nav-item .tree-1 .md-tabs a.open .nav-link:hover, .md-tabs .main-menu .main-menu-content .nav-item .tree-2 a.open .nav-link:hover, .main-menu .main-menu-content .nav-item .tree-2 .md-tabs a.open .nav-link:hover, .md-tabs .main-menu .main-menu-content .nav-item .tree-3 a.open .nav-link:hover, .main-menu .main-menu-content .nav-item .tree-3 .md-tabs a.open .nav-link:hover, .md-tabs .main-menu .main-menu-content .nav-item .tree-4 a.open .nav-link:hover, .main-menu .main-menu-content .nav-item .tree-4 .md-tabs a.open .nav-link:hover, .md-tabs .nav-link.active, .md-tabs .nav-link.active:focus, .md-tabs .nav-link.active:hover {
@@ -1270,8 +1270,8 @@ a.bg-danger:focus, a.bg-danger:hover {
     width: calc(100% / 4);
     height: 4px;
     position: absolute;
-    -webkit-transition: left 0.3s ease-out;
-    transition: left 0.3s ease-out;
+    -webkit-transition: left 0.1s ease-out;
+    transition: left 0.1s ease-out;
     bottom: 0
 }
 
@@ -1286,7 +1286,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .img-tabs a {
     opacity: 0.5;
-    transition: all ease-in-out 0.3s
+    transition: all ease-in-out 0.1s
 }
 
 .img-tabs a span i {
@@ -1303,7 +1303,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .img-tabs a.active {
     opacity: 1;
-    transition: all ease-in-out 0.3s
+    transition: all ease-in-out 0.1s
 }
 
 .img-tabs .nav-item:first-child, .img-tabs .main-menu .main-menu-content .nav-item .tree-1 a:first-child, .main-menu .main-menu-content .nav-item .tree-1 .img-tabs a:first-child, .img-tabs .main-menu .main-menu-content .nav-item .tree-2 a:first-child, .main-menu .main-menu-content .nav-item .tree-2 .img-tabs a:first-child, .img-tabs .main-menu .main-menu-content .nav-item .tree-3 a:first-child, .main-menu .main-menu-content .nav-item .tree-3 .img-tabs a:first-child, .img-tabs .main-menu .main-menu-content .nav-item .tree-4 a:first-child, .main-menu .main-menu-content .nav-item .tree-4 .img-tabs a:first-child {
@@ -1843,14 +1843,14 @@ ul.list-contacts .list-group-item.active a {
 }
 
 .blog-page .blog-img {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     overflow: hidden;
     margin-bottom: -20px
 }
 
 .blog-page .blog-img:hover {
     opacity: 0.8;
-    transition: all 0.3s ease-in-out
+    transition: all 0.1s ease-in-out
 }
 
 .blog-page .blog-img .sharing {
@@ -2079,7 +2079,7 @@ ul.list-contacts .list-group-item.active a {
 
 .port_detail_next_search a {
     color: #333;
-    transition: all 0.3s 0s
+    transition: all 0.1s 0s
 }
 
 .port_detail_next_search a i {
@@ -2681,12 +2681,12 @@ table.matrics-table tr:first-child td {
 
 #small_banner:hover .slick-prev {
     left: 0;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 #small_banner:hover .slick-next {
     right: 0;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .port_details_all_img {
@@ -2699,7 +2699,7 @@ table.matrics-table tr:first-child td {
     height: 100%;
     background: rgba(0, 0, 0, 0.62);
     width: 4%;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .slick-prev:hover, .slick-prev:focus {
@@ -2714,7 +2714,7 @@ table.matrics-table tr:first-child td {
     height: 100%;
     background: rgba(0, 0, 0, 0.62);
     width: 4%;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .slick-next:hover, .slick-next:focus {
@@ -3308,17 +3308,17 @@ table.matrics-table tr:first-child td {
     text-align: center;
     background: #fff;
     z-index: 9999;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .color-picker a.handle:hover {
     background: #4A6076;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .color-picker a.handle:hover i {
     color: #fff;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .color-picker a.handle i {
@@ -3382,12 +3382,12 @@ table.matrics-table tr:first-child td {
     margin-bottom: 10px;
     margin-right: 5px;
     float: left;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .color-picker .colors a:hover {
     box-shadow: 0 0 2px 1px rgba(247, 54, 121, 0.58);
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .color-picker .skin a {
@@ -5083,7 +5083,7 @@ table thead .border-bottom-info th, table tbody .border-bottom-info th, table tb
     position: absolute;
     right: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 24rem
 }
@@ -5533,7 +5533,7 @@ body.menu-collapsed .main-navigation .nav-item .tree-1, .main-menu .main-menu-co
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 99
@@ -5543,7 +5543,7 @@ body.menu-collapsed .main-navigation .nav-item:hover .tree-1, body.menu-collapse
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5572,7 +5572,7 @@ body.menu-collapsed .main-navigation .nav-sub-item .tree-2 {
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 99
@@ -5590,7 +5590,7 @@ body.menu-collapsed .main-navigation .nav-sub-item:hover .tree-2 {
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5615,7 +5615,7 @@ body.menu-collapsed .main-navigation .nav-sub-item-3 .tree-3 {
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 99
@@ -5633,7 +5633,7 @@ body.menu-collapsed .main-navigation .nav-sub-item-3:hover .tree-3 {
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5658,7 +5658,7 @@ body.menu-collapsed .main-navigation .nav-sub-item-4 .tree-4 {
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 99
@@ -5676,7 +5676,7 @@ body.menu-collapsed .main-navigation .nav-sub-item-4:hover .tree-4 {
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5795,7 +5795,7 @@ body.menu-compact .main-navigation .nav-item .tree-1, .main-menu .main-menu-cont
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em
 }
@@ -5804,7 +5804,7 @@ body.menu-compact .main-navigation .nav-item:hover .tree-1, body.menu-compact .m
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5834,7 +5834,7 @@ body.menu-compact .main-navigation .nav-sub-item .tree-2 {
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 9999
@@ -5852,7 +5852,7 @@ body.menu-compact .main-navigation .nav-sub-item:hover .tree-2 {
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5878,7 +5878,7 @@ body.menu-compact .main-navigation .nav-sub-item-3 .tree-3 {
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 9999
@@ -5896,7 +5896,7 @@ body.menu-compact .main-navigation .nav-sub-item-3:hover .tree-3 {
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -5922,7 +5922,7 @@ body.menu-compact .main-navigation .nav-sub-item-4 .tree-4 {
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 15em;
     z-index: 9999
@@ -5940,7 +5940,7 @@ body.menu-compact .main-navigation .nav-sub-item-4:hover .tree-4 {
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -6089,7 +6089,7 @@ body.horizontal-fixed .main-navigation .nav-item .tree-1, body.horizontal-static
     position: absolute;
     top: 60px;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 18em;
     z-index: 9999
@@ -6103,7 +6103,7 @@ body.horizontal-fixed .main-navigation .nav-item:hover .tree-1, body.horizontal-
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -6128,7 +6128,7 @@ body.horizontal-fixed .main-navigation .nav-sub-item .tree-2, body.horizontal-st
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 18em;
     z-index: 9999
@@ -6151,7 +6151,7 @@ body.horizontal-fixed .main-navigation .nav-sub-item:hover .tree-2, body.horizon
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -6176,7 +6176,7 @@ body.horizontal-fixed .main-navigation .nav-sub-item-3 .tree-3, body.horizontal-
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 18em;
     z-index: 9999
@@ -6199,7 +6199,7 @@ body.horizontal-fixed .main-navigation .nav-sub-item-3:hover .tree-3, body.horiz
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -6224,7 +6224,7 @@ body.horizontal-fixed .main-navigation .nav-sub-item-4 .tree-4, body.horizontal-
     position: absolute;
     top: 0;
     transform: translateY(30px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: hidden;
     width: 18em;
     z-index: 9999
@@ -6247,7 +6247,7 @@ body.horizontal-fixed .main-navigation .nav-sub-item-4:hover .tree-4, body.horiz
     -webkit-transform: translateY(0px);
     opacity: 1;
     transform: translateY(0px);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     visibility: visible
 }
 
@@ -6498,7 +6498,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: #1abc9c;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-primary:hover, .sweet-alert button.confirm:hover, .wizard>.actions a:hover {
@@ -6524,21 +6524,21 @@ body.menu-sidebar .navbar-wrapper {
 }
 
 .btn-warning {
-    background-color: #f1c40f;
-    border-color: #f1c40f;
+    background-color: #fd8469;
+    border-color: #f7795d;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-warning:hover {
-    background-color: #f4d03f;
-    border-color: #f4d03f
+    background-color: #f18f79;
+    border-color: #ec8871;
 }
 
 .btn-warning:active {
-    background-color: #b8960b !important;
-    border-color: #b8960b;
+    background-color: #fd8469 !important;
+    border-color: #f7795d;
     box-shadow: none;
     color: #fff
 }
@@ -6549,8 +6549,8 @@ body.menu-sidebar .navbar-wrapper {
 }
 
 .btn-warning.disabled {
-    background-color: rgba(241, 196, 15, 0.5);
-    border-color: rgba(241, 196, 15, 0.5)
+    background-color: rgba(253, 132, 105, 0.5);
+    border-color: rgba(253, 132, 105, 0.5)
 }
 
 .btn-default {
@@ -6558,7 +6558,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: #bdc3c7;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-default:hover {
@@ -6588,7 +6588,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: #e74c3c;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-danger:hover {
@@ -6618,7 +6618,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: #2ecc71;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-success:hover {
@@ -6648,7 +6648,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: #34495e;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-inverse:hover {
@@ -6678,7 +6678,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: #3498DB;
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-info:hover {
@@ -6708,7 +6708,7 @@ body.menu-sidebar .navbar-wrapper {
     border-color: rgba(26, 188, 156, 0.5);
     color: #fff;
     cursor: pointer;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .btn-outline-primary {
@@ -6908,7 +6908,7 @@ body.menu-sidebar .navbar-wrapper {
 }
 
 .dropdown-inverse .dropdown-item, .dropdown-split-inverse .dropdown-item {
-    transition: all 0.3s ease-in
+    transition: all 0.1s ease-in
 }
 
 .dropdown-inverse .dropdown-item:hover, .dropdown-split-inverse .dropdown-item:hover {
@@ -7565,9 +7565,9 @@ body.menu-sidebar .navbar-wrapper {
     margin: 0.25rem;
     width: 1rem;
     height: 1rem;
-    -webkit-transition: -webkit-transform 0.28s ease;
-    transition: -webkit-transform 0.28s ease;
-    transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+    -webkit-transition: -webkit-transform 0.20s ease;
+    transition: -webkit-transform 0.20s ease;
+    transition: transform 0.20s ease, -webkit-transform 0.20s ease;
     border-radius: 50%;
     border: 0.125rem solid #1abc9c
 }
@@ -7837,7 +7837,7 @@ body.menu-sidebar .navbar-wrapper {
 .checkbox-fade label input[type="checkbox"]+.cr>.cr-icon, .checkbox-fade label input[type="radio"]+.cr>.cr-icon {
     transform: scale(3) rotateZ(-20deg);
     opacity: 0;
-    transition: all 0.3s ease-in
+    transition: all 0.1s ease-in
 }
 
 .checkbox-fade label:after {
@@ -9286,7 +9286,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
     right: 30px;
     top: 50px;
     font-size: 50px;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .group-widget {
@@ -9335,7 +9335,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
     top: 50px;
     font-size: 48px;
     opacity: 0.4;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .bg-facebook {
@@ -9384,7 +9384,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 
 .widget-profile-card-2 a {
     color: #fff;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 .widget-profile-card-2 a:hover {
@@ -14028,7 +14028,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
 
 .social-profile:hover .profile-hvr, .social-wallpaper:hover .profile-hvr {
     opacity: 1;
-    transition: all ease-in-out 0.3s
+    transition: all ease-in-out 0.1s
 }
 
 .profile-hvr {
@@ -14041,7 +14041,7 @@ table.footable-paging-center>tfoot>tr.footable-paging>td {
     top: 0;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.61);
-    transition: all ease-in-out 0.3s
+    transition: all ease-in-out 0.1s
 }
 
 .social-profile {
@@ -14799,7 +14799,7 @@ tr:first-child>td>.fc-day-grid-event {
     position: absolute;
     width: 16em;
     background-color: #fff;
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
     opacity: 0;
@@ -14810,7 +14810,7 @@ tr:first-child>td>.fc-day-grid-event {
 .light-nav-border .navbar-varient-submenu a, .primary-nav .navbar-varient-submenu a, .warning-nav .navbar-varient-submenu a, .success-nav .navbar-varient-submenu a, .info-nav .navbar-varient-submenu a, .danger-nav .navbar-varient-submenu a {
     padding: 10px;
     display: block;
-    transition: background-color linear 0.3s
+    transition: background-color linear 0.1s
 }
 
 .light-nav-border .navbar-varient-submenu a:hover, .primary-nav .navbar-varient-submenu a:hover, .warning-nav .navbar-varient-submenu a:hover, .success-nav .navbar-varient-submenu a:hover, .info-nav .navbar-varient-submenu a:hover, .danger-nav .navbar-varient-submenu a:hover {
@@ -14956,7 +14956,7 @@ tr:first-child>td>.fc-day-grid-event {
     position: absolute;
     width: 16em;
     background-color: #fff;
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
     opacity: 0;
@@ -14978,7 +14978,7 @@ tr:first-child>td>.fc-day-grid-event {
 .dark-nav-border .navbar-varient-submenu a, .primary-nav-dark .navbar-varient-submenu a, .warning-nav-dark .navbar-varient-submenu a, .success-nav-dark .navbar-varient-submenu a, .info-nav-dark .navbar-varient-submenu a, .danger-nav-dark .navbar-varient-submenu a, .primary-nav .navbar-varient-submenu a, .warning-nav .navbar-varient-submenu a, .success-nav .navbar-varient-submenu a, .info-nav .navbar-varient-submenu a, .danger-nav .navbar-varient-submenu a {
     padding: 10px;
     display: block;
-    transition: background-color linear 0.3s
+    transition: background-color linear 0.1s
 }
 
 .dark-nav-border li.active a, .primary-nav-dark li.active a, .warning-nav-dark li.active a, .success-nav-dark li.active a, .info-nav-dark li.active a, .danger-nav-dark li.active a, .primary-nav li.active a, .warning-nav li.active a, .success-nav li.active a, .info-nav li.active a, .danger-nav li.active a {
@@ -15589,8 +15589,8 @@ pre.line-numbers>code {
 }
 
 .preloader3 .circ5 {
-    -webkit-animation-delay: -0.3s;
-    animation-delay: -0.3s
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s
 }
 
 .preloader3 .loader-md {
@@ -15716,8 +15716,8 @@ pre.line-numbers>code {
 .preloader5 .m {
     -webkit-animation: pulse 2s infinite linear;
     animation: pulse 2s infinite linear;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s
 }
 
 .preloader5 .r {
@@ -16106,7 +16106,7 @@ span.value {
     cursor: pointer;
     margin-bottom: 20px;
     margin-right: 2%;
-    transition: all 0.3s;
+    transition: all 0.1s;
     position: relative
 }
 
@@ -16122,7 +16122,7 @@ span.value {
 #task-container li.complete {
     opacity: 1;
     border-top: 9px solid #e74c3c;
-    transition: all ease-in 0.3s
+    transition: all ease-in 0.1s
 }
 
 #task-container li.complete:before {
@@ -16187,7 +16187,7 @@ span.value {
 
 .to-do-list:hover i {
     opacity: 1;
-    transition: opacity ease-in 0.3s
+    transition: opacity ease-in 0.1s
 }
 
 .to-do-list p {

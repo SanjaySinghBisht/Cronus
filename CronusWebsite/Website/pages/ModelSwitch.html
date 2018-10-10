@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="description">
     <meta name="keywords">
-   <meta name="author" content="Sanjay Singh Bisht">
+    <meta name="author" content="Sanjay Singh Bisht">
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
@@ -55,7 +55,9 @@
         </div>
     </div>
     <!-- Pre-loader end -->
-    <!-- Pre-Header Start -->     <div class="header-section"></div>     <!-- Pre-Header Ends -->
+    <!-- Pre-Header Start -->
+    <div class="header-section"></div>
+    <!-- Pre-Header Ends -->
     <!-- Main-body start-->
     <div class="main-body">
         <div class="page-wrapper">
@@ -121,24 +123,37 @@
                                                     <label for="model">Model</label>
                                                     <div class="select2-dd"></div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-sm-12 col-md-6">
                                                     <label for="model">Enter Cusip</label>
                                                     <input class="form-control" placeholder="Comma [,] separated list of Cusip(s)">
                                                 </div>
-                                                <div class="col-md-12 text-right m-t-15">
-                                                    <button class="btn btn-danger">Reset</button>
-                                                    <button class="btn btn-success">Search</button>
+                                                <div class="col-sm-12 col-md-6 text-right">
+                                                    <div class="btn-div m-t-30">
+                                                        <button type="button" class="btn btn-warning">
+                                                            <i class="icofont icofont-refresh"></i>
+                                                            <span class="btn-text">Reset</span>
+                                                        </button>
+                                                        <button class="btn btn-primary">
+                                                            <i class="icofont icofont-search-alt-1"></i>
+                                                            <span class="btn-text">Search</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-12  m-t-15">
                                                     <div class="input-group">
-                                                        <input id="search_field2" type="search" placeholder="Search" class="form-control">
-                                                        <span class="input-group-addon" id="basic-addon3">
-                                                            <i class="icofont icofont-search-alt-1"></i>
-                                                        </span>
+                                                        <div class="input-group input-group-button">
+                                                            <input type="text" class="form-control" placeholder="Search">
+                                                            <span class="input-group-addon  bg-primary" id="basic-addon12">
+                                                                <button class="btn btn-primary">
+                                                                    <i class="icofont icofont-search-alt-1"></i>
+                                                                    <span class="btn-text">Search</span>
+                                                                </button>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                     <div id="agencyModalMap1"></div>
                                                 </div>
-                                                
+
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-12 col-lg-6">
@@ -156,9 +171,18 @@
                                             </div>
                                             <div class="row m-t-15">
                                                 <div class="col-md-12 text-right">
-                                                    <button class="btn btn-info">Skip</button>
-                                                    <button class="btn btn-danger">Reset</button>
-                                                    <button class="btn btn-success">Force Include</button>
+                                                    <button type="button" class="btn btn-info">
+                                                        <i class="icofont icofont-paper-plane"></i>
+                                                        <span class="btn-text">Skip</span>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning">
+                                                        <i class="icofont icofont-refresh"></i>
+                                                        <span class="btn-text">Reset</span>
+                                                    </button>
+                                                    <button class="btn btn-success">
+                                                        <i class="icofont icofont-safety"></i>
+                                                        <span class="btn-text">Force Include</span>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +190,7 @@
                                     </div>
 
                                 </div>
-                                <div class="tab-pane" id="switch" role="tabpanel" aria-expanded="false"> 
+                                <div class="tab-pane" id="switch" role="tabpanel" aria-expanded="false">
                                     <form>
                                         <div class="row">
                                             <div class="col-md-12">
@@ -187,23 +211,34 @@
                                                                 </label>
                                                             </div>
                                                         </div>
-                                                    </div> 
+                                                    </div>
                                                     <div class="col-xs-12 col-md-6 col-lg-10">
                                                         <label for="model">Enter Cusip</label>
                                                         <input class="form-control" placeholder="Comma [,] separated list of Cusip(s)">
                                                     </div>
                                                     <div class="col-md-12 text-right m-t-15">
-                                                        <button class="btn btn-danger">Reset</button>
-                                                        <button class="btn btn-success">Search</button>
+                                                        <button type="button" class="btn btn-warning">
+                                                            <i class="icofont icofont-refresh"></i>
+                                                            <span class="btn-text">Reset</span>
+                                                        </button>
+                                                        <button class="btn btn-primary">
+                                                            <i class="icofont icofont-search-alt-1"></i>
+                                                            <span class="btn-text">Search</span>
+                                                        </button>
                                                     </div>
                                                     <div class="col-md-12  m-t-15">
                                                         <div class="input-group">
-                                                            <input id="search_field3" type="search" placeholder="Search" class="form-control">
-                                                            <span class="input-group-addon" id="basic-addon3">
-                                                                <i class="icofont icofont-search-alt-1"></i>
-                                                            </span>
-                                                        </div> 
-                                                    </div> 
+                                                            <div class="input-group input-group-button">
+                                                                <input type="text" class="form-control" placeholder="Search">
+                                                                <span class="input-group-addon  bg-primary" id="basic-addon12">
+                                                                    <button class="btn btn-primary">
+                                                                        <i class="icofont icofont-search-alt-1"></i>
+                                                                        <span class="btn-text">Search</span>
+                                                                    </button>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,7 +247,10 @@
                                                 <div id="agencyModalMap2"></div>
                                             </div>
                                             <div class="col-md-12 m-t-15 text-right">
-                                                <button class="btn btn-success">Switch</button>
+                                                <button class="btn btn-success">
+                                                    <i class="icofont icofont-rotation"></i>
+                                                    <span class="btn-text">Switch</span>
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
@@ -246,7 +284,7 @@
     <script type="text/javascript" src="../../plugins/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
     <script type="text/javascript" src="../../plugins/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
     <script type="text/javascript" src="../../plugins/jquery-i18next/jquery-i18next.min.js"></script>
-    
+
     <!-- MultiSelect js -->
     <script type="text/javascript" src="../../plugins/select2/dist/js/select2.full.min.js"></script>
     <!--Toastr js-->

@@ -208,6 +208,10 @@ a.handle, .color-picker {
     margin-top: 33px;
 }
 
+.min-h-116 {
+    min-height: 116px;
+}
+
 .min-h-142 {
     min-height: 142px;
 }
@@ -476,6 +480,18 @@ input.htCheckboxRendererInput:checked:after {
     cursor: pointer;
 }
 
+.full-screen.full-screen-expanded{
+    right: 8px;
+}
+
+label + .full-screen{
+top: 35px;
+}
+
+label + .full-screen.full-screen-expanded{
+    top: 8px;
+}
+
 .full-screen-expanded.full-screen {
     position: fixed;
     z-index: 999999;
@@ -625,7 +641,7 @@ span[class*="bg-"]:hover button {
 
 .rows-effected {
     display: inline-block;
-    float: right;
+    /* float: right; */
 }
 
 textarea[class*="copyPaste"] {
@@ -640,6 +656,13 @@ textarea[class*="copyPaste"] {
 .input-textarea{
     max-height: 32px;
 }
+
+/*search input*/
+.input-group-addon .btn-primary:active {
+    background-color: #28e1bd !important;
+    border-color: #28e1bd; 
+}
+/*search input*/
 @media (max-width:480px) {
     .btn {
         width: 100%;
@@ -660,6 +683,9 @@ textarea[class*="copyPaste"] {
 }
 
 @media (min-width:320px) and (max-width: 767px) {
+    .btn-div[class*="m-"]{
+        margin: auto;
+    }
     .sec-analytic-files-list .task-board {
         float: left;
         clear: both;
@@ -683,9 +709,9 @@ textarea[class*="copyPaste"] {
     .main-body .page-wrapper .page-header-breadcrumb {
         display: none;
     }
-    .btn-text {
+    /* .btn-text {
         display: none;
-    }
+    } */
     .p-chat-user {
         top: 50px;
     }
@@ -693,12 +719,12 @@ textarea[class*="copyPaste"] {
         display: inline-block;
         width: 30%;
         padding: 0;
-        float: left;
+        /* float: left; */
     }
     .dt-bootstrap4 .row:first-child>div:nth-child(2) {
         display: inline-block;
         padding: 0;
-        float: left;
+        /* float: left; */
         width: 70% !important;
     }
     .dt-bootstrap4 .row:first-child>div:nth-child(2) input {
