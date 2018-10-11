@@ -19,11 +19,43 @@ $(document).ready(function() {
         <button type="button" id="cancelBtn" class="btn m-t-5 btn-danger">\
         <i class="icofont icofont-close"></i> Cancel\
         </button>\
-        </div></form></div><div class="radio radio-inline"><label><input type="radio" name="radio"><i class="helper"></i>No</label></div></form></div></div></div><div class="row m-t-5"><div class="col-md-6 col-sm-12"><div class="form-group row"><div class="col-sm-12"><input type="text" tabindex="1" class="form-control" placeholder="Reason"></div></div><div class="row"><div class="col-sm-12"><div tabindex="2" class="select2-dd"></div></div></div><div class="form-group row"><div class="col-sm-12"><input type="text" tabindex="3" class="form-control" placeholder="Category"></div></div><div class="form-group row"><div class="col-sm-12"><input type="text" tabindex="4" class="form-control" placeholder="Query Name"></div></div><div class="form-group text-right row"><div class="col-sm-12"><button class="btn btn-info">\
+        </div></form></div><div class="radio radio-inline"><label><input type="radio" name="radio"><i class="helper"></i>No</label></div></form></div></div></div>\
+        <div class="row m-t-5">\
+        <div class="col-md-6 col-sm-12">\
+        <div class="row">\
+        <div class="col-sm-12 col-md-6 form-group">\
+        <label for="reason">Reason</label>\
+        <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
+        </div> \
+        <div class="col-sm-12 col-md-6">\
+        <label for="Database">Database</label>\
+        <div tabindex="2" class="select2-dd"></div>\
+        </div> \
+        <div class="col-sm-12 col-md-6 form-group">\
+        <label for="Category">Category</label>\
+        <input type="text" tabindex="3" class="form-control" placeholder="Category">\
+        </div> \
+        <div class="col-sm-12 col-md-6 form-group">\
+        <label for="Query Name">Query Name</label>\
+        <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
+        </div>\
+        </div>\
+        <div class="form-group text-right row">\
+        <div class="col-sm-12">\
+        <button class="btn btn-info">\
         <i class="icofont icofont-hand-up"></i>\
-        <span class="btn-text">Save Query</span>\
+        <span>Save Query</span>\
         </button>\
-        </div></div></div><div class="col-md-6 col-sm-12"><div class="form-group row"><div class="col-sm-12"><textarea rows="5" cols="5" tabindex="5" class="form-control min-h-142 form-control-variant" placeholder="Enter your query. Use semicolon(;) as a separator for multiple queries"></textarea>\
+        </div>\
+        </div>\
+        </div>\
+        <div class="col-md-6 col-sm-12">\
+        <div class="form-group row">\
+        <div class="col-sm-12">\
+        <a class="full-screen">\
+        <i class="icofont icofont-resize ft-20"></i>\
+        </a>\
+        <textarea rows="2" cols="5" tabindex="5" class="form-control min-h-93 form-control-variant" placeholder="Enter your query. Use semicolon(;) as a separator for multiple queries"></textarea>\
         </div ></div > <div class="row"><div class="col-sm-12 form-group col-md-6"><input type="text" tabindex="6" class="form-control" placeholder="Expected rows effected eg 100"></div><div class="col-sm-12  col-md-6"><div tabindex="7" class="select2-dd"></div></div></div><div class="form-group row"><div class="col-sm-12 text-right">\
         <button type="button" class="btn btn-success">\
         <i class="icofont icofont-play-alt-2"></i>\

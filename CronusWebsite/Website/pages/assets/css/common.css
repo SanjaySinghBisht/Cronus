@@ -232,6 +232,10 @@ a.handle, .color-picker {
     min-height: 142px;
 }
 
+.min-h-93 {
+    min-height: 93px;
+}
+
 .l-h-0 {
     line-height: 0;
 }

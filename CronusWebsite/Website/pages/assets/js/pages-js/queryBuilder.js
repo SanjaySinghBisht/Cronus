@@ -51,20 +51,20 @@ $(document).ready(function() {
   </div>\
   <div class="row">\
   <div class="col-md-6 col-lg-3 col-sm-12">\
-  <div tabindex="3" class="select2-dd">\
-  </div>\
-  </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
-  <div tabindex="4" class="select2-dd">\
-  </div>\
+  <label for="Request Type">Request Type</label>\
+  <div tabindex="4" class="select2-dd"></div>\
   </div>\
   <div class="col-md-6 col-lg-3 col-sm-12">\
-  <div tabindex="5" class="select2-dd">\
-  </div>\
+  <label for="Group Responsible">Group Responsible</label>\
+  <div tabindex="5" class="select2-dd"></div>\
   </div>\
   <div class="col-md-6 col-lg-3 col-sm-12">\
-  <div tabindex="6" class="select2-dd">\
+  <label for="Team Responsible">Team Responsible</label>\
+  <div tabindex="3" class="select2-dd"></div>\
   </div>\
+  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <label for="Approver">Approver</label>\
+  <div tabindex="6" class="select2-dd"></div>\
   </div>\
   </div>\
   <div class="row text-right">\
@@ -143,25 +143,30 @@ $(document).ready(function() {
   </div>\
   <div class="row m-t-5">\
   <div class="col-md-6 col-sm-12">\
-  <div class="form-group row">\
-  <div class="col-sm-12">\
-  <input type="text" tabindex="15" class="form-control" placeholder="Reason">\
-  </div>\
-  </div>\
   <div class="row">\
+  <div class="col-sm-12 col-md-6 form-group">\
+  <label for="reason">Reason</label>\
+  <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
+  </div> \
+  <div class="col-sm-12 col-md-6">\
+  <label for="Database">Database</label>\
+  <div tabindex="2" class="select2-dd"></div>\
+  </div> \
+  <div class="col-sm-12 col-md-6 form-group">\
+  <label for="Category">Category</label>\
+  <input type="text" tabindex="3" class="form-control" placeholder="Category">\
+  </div> \
+  <div class="col-sm-12 col-md-6 form-group">\
+  <label for="Query Name">Query Name</label>\
+  <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
+  </div>\
+  </div>\
+  <div class="form-group text-right row">\
   <div class="col-sm-12">\
-  <div tabindex="16" class="select2-dd">\
-  </div>\
-  </div>\
-  </div>\
-  <div class="form-group row">\
-  <div class="col-sm-12">\
-  <input type="text" tabindex="17" class="form-control" placeholder="Category">\
-  </div>\
-  </div>\
-  <div class="form-group row">\
-  <div class="col-sm-12">\
-  <input type="text" tabindex="18" class="form-control" placeholder="Query Name">\
+  <button class="btn btn-info">\
+  <i class="icofont icofont-hand-up"></i>\
+  <span>Save Query</span>\
+  </button>\
   </div>\
   </div>\
   </div>\
@@ -171,34 +176,35 @@ $(document).ready(function() {
   <a class="full-screen">\
   <i class="icofont icofont-resize ft-20"></i>\
   </a>\
-  <textarea rows="5" cols="5" tabindex="19" class="form-control min-h-142 form-control-variant" placeholder="Enter your query. Use semicolon(;) as a separator for multiple queries"></textarea>\
+  <textarea rows="2" cols="2" tabindex="5" class="form-control min-h-93 form-control-variant" placeholder="Enter your query. Use semicolon(;) as a separator for multiple queries"></textarea>\
   </div>\
   </div>\
   <div class="row">\
   <div class="col-sm-12 form-group col-md-6">\
-  <input type="text" tabindex="6" class="form-control" tabindex="20"  placeholder="Expected rows effected eg 100">\
+  <input type="text" tabindex="20" class="form-control" placeholder="Expected rows effected eg 100">\
   </div>\
   <div class="col-sm-12 col-md-6">\
-  <div tabindex="21" class="select2-dd">\
+  <div tabindex="7" tabindex="21" class="select2-dd"></div>\
   </div>\
-  </div>\
-  </div>\
-  </div>\
-  </div>\
-  <div class="form-group row">\
   <div class="col-sm-12 text-right">\
   <button class="btn btn-info">\
-  <i class="icofont icofont-hand-up"></i><span class="btn-text">Save Query</span>\
+  <i class="icofont icofont-hand-up"></i>\
+  <span>Save Query</span>\
   </button>\
   <button type="button" tabindex="22" class="btn btn-success">\
-  <i class="icofont icofont-play-alt-2"></i><span class="btn-text">Execute</span>\
+  <i class="icofont icofont-play-alt-2"></i>\
+  <span>Execute</span>\
   </button>\
   <button type="button" tabindex="23" class="btn btn-primary">\
-  <i class="icofont icofont-play-alt-2"></i><span class="btn-text">Commit</span>\
+  <i class="icofont icofont-play-alt-2"></i>\
+  <span>Commit</span>\
   </button>\
   <button type="button" tabindex="24" class="btn btn-danger">\
-  <i class="icofont icofont-ui-reply"></i><span class="btn-text">Rollback</span>\
+  <i class="icofont icofont-ui-reply"></i>\
+  <span>Rollback</span>\
   </button>\
+  </div>\
+  </div>\
   </div>\
   </div>\
   </form>\
