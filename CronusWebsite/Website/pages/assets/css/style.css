@@ -6073,7 +6073,8 @@ body.horizontal-fixed .main-menu, body.horizontal-static .main-menu, body.horizo
 }
 
 body.horizontal-fixed .main-menu .main-menu-content .nav-item>a, body.horizontal-static .main-menu .main-menu-content .nav-item>a, body.horizontal-icon .main-menu .main-menu-content .nav-item>a, body.horizontal-icon-fixed .main-menu .main-menu-content .nav-item>a, body.horizontal-fixed .main-menu .main-menu-content .nav-item .tree-1 a>a, body.horizontal-static .main-menu .main-menu-content .nav-item .tree-1 a>a, body.horizontal-icon .main-menu .main-menu-content .nav-item .tree-1 a>a, body.horizontal-icon-fixed .main-menu .main-menu-content .nav-item .tree-1 a>a, body.horizontal-fixed .main-menu .main-menu-content .nav-item .tree-2 a>a, body.horizontal-static .main-menu .main-menu-content .nav-item .tree-2 a>a, body.horizontal-icon .main-menu .main-menu-content .nav-item .tree-2 a>a, body.horizontal-icon-fixed .main-menu .main-menu-content .nav-item .tree-2 a>a, body.horizontal-fixed .main-menu .main-menu-content .nav-item .tree-3 a>a, body.horizontal-static .main-menu .main-menu-content .nav-item .tree-3 a>a, body.horizontal-icon .main-menu .main-menu-content .nav-item .tree-3 a>a, body.horizontal-icon-fixed .main-menu .main-menu-content .nav-item .tree-3 a>a, body.horizontal-fixed .main-menu .main-menu-content .nav-item .tree-4 a>a, body.horizontal-static .main-menu .main-menu-content .nav-item .tree-4 a>a, body.horizontal-icon .main-menu .main-menu-content .nav-item .tree-4 a>a, body.horizontal-icon-fixed .main-menu .main-menu-content .nav-item .tree-4 a>a {
-    padding: 8px 25px
+    /* padding: 8px 25px */
+    padding: 8px 15px
 }
 
 body.horizontal-fixed .main-navigation, body.horizontal-static .main-navigation, body.horizontal-icon .main-navigation, body.horizontal-icon-fixed .main-navigation {

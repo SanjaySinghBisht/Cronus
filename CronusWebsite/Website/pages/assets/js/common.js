@@ -70,21 +70,58 @@ $(document).ready(function () {
     /*Dynamic Menus*/
     $(".header-section").html('\
     <!-- Menu header start -->\
-    <nav class="navbar header-navbar" data-toggle="affix"><div class="navbar-wrapper"><div class="navbar-logo"><a class="mobile-menu" id="mobile-collapse" href="#!">\
-    <i class="ti-menu"></i></a><a class="mobile-search morphsearch-search" href="#"><i class="ti-search"></i></a><a href="#!"><a href="#">CRONUS</a></a>\
-    <a class="mobile-options"><i class="ti-more"></i></a></div><div class="navbar-container container-fluid"><div><ul class="nav-left"><li><a id="collapse-menu" href="#">\
-    <i class="ti-menu"></i></a></li></ul><ul class="nav-right"><li class="header-notification lng-dropdown"><a href="#" id="dropdown-active-item">\
-    Current Environment Selected is <i class="icofont icofont-contrast  m-r-5"></i> Beta</a><ul class="show-notification"><li><a href="#" data-lng="Beta">\
-    <i class="icofont icofont-contrast  m-r-5"></i> Beta</a></li><li><a href="#" data-lng="Delta"><i class="icofont icofont-contrast  m-r-5"></i> Delta</a></li>\
-    <li><a href="#" data-lng="Prod"><i class="icofont icofont-contrast  m-r-5"></i> PROD</a></li><li><a href="#" data-lng="QA"><i class="icofont icofont-contrast  m-r-5"></i>\
-     QA</a></li></ul></li><li class="user-profile header-notification"><a href="#!"><img src="assets/images/user.png" alt="User-Profile-Image"><span>Anil Kumar</span>\
-     <i class="ti-angle-down"></i></a><ul class="show-notification profile-notification"><li><a href="#!"><i class="ti-settings"></i> Settings</a></li><li><a href="#!">\
-     <i class="ti-user"></i> Profile</a></li><li><a href="#!"><i class="ti-email"></i> My Messages</a></li><li><a href="#!"><i class="ti-lock"></i> Lock Screen</a></li>\
-     <li><a href="#!"><i class="ti-layout-sidebar-left"></i> Logout</a></li></ul></li></ul></div></div></div></nav><!-- Menu header end --><!-- Menu aside start -->\
-     <div class="main-menu"><div class="main-menu-header"><img class="img-40" src="assets/images/user.png" alt="User-Profile-Image"><div class="user-details">\
-     <span>John Doe</span><span id="more-details">UX Designer<i class="icon-arrow-down"></i></span></div></div><div class="main-menu-content">\
-     <ul class="main-navigation"></ul></div>\
-     <!-- Menu aside end -->\
+    <nav class="navbar header-navbar" data-toggle="affix">\
+    <div class="navbar-wrapper">\
+        <div class="navbar-logo"><a class="mobile-menu" id="mobile-collapse" href="#!">\
+            <i class="ti-menu"></i></a><a class="mobile-search morphsearch-search" href="#"><i class="ti-search"></i></a><a href="#!"><a href="#">CRONUS</a></a>\
+            <a class="mobile-options"><i class="ti-more"></i></a>\
+        </div>\
+        <div class="navbar-container container-fluid">\
+            <div>\
+                <ul class="nav-left">\
+                <li><a id="collapse-menu" href="#">\
+                    <i class="ti-menu"></i></a>\
+                </li>\
+                </ul>\
+                <ul class="nav-right">\
+                <li class="header-notification lng-dropdown">\
+                    <a href="#" id="dropdown-active-item">\
+                    Current Environment Selected is <i class="icofont icofont-contrast  m-r-5"></i> Beta</a>\
+                    <ul class="show-notification">\
+                        <li><a href="#" data-lng="Beta">\
+                            <i class="icofont icofont-contrast  m-r-5"></i> Beta</a>\
+                        </li>\
+                        <li><a href="#" data-lng="Delta"><i class="icofont icofont-contrast  m-r-5"></i> Delta</a></li>\
+                        <li><a href="#" data-lng="Prod"><i class="icofont icofont-contrast  m-r-5"></i> PROD</a></li>\
+                        <li><a href="#" data-lng="QA"><i class="icofont icofont-contrast  m-r-5"></i>\
+                            QA</a>\
+                        </li>\
+                    </ul>\
+                </li>\
+                <li class="user-profile header-notification">\
+                    <a href="#!"><img src="assets/images/user.png" alt="User-Profile-Image"><span>Anil Kumar</span>\
+                    <i class="ti-angle-down"></i></a>\
+                    <ul class="show-notification profile-notification">\
+                        <li><a href="profile.html"><i class="ti-user"></i> Profile</a>\
+                        </li>\
+                        <li><a href="#!"><i class="ti-layout-sidebar-left"></i> Logout</a></li>\
+                    </ul>\
+                </li>\
+                </ul>\
+            </div>\
+        </div>\
+    </div>\
+    </nav> \
+    <div class="main-menu">\
+    <div class="main-menu-header">\
+    <img class="img-40" src="assets/images/user.png" alt="User-Profile-Image">\
+    <div class="user-details">\
+        <span>John Doe</span><span id="more-details">UX Designer<i class="icon-arrow-down"></i></span>\
+    </div>\
+    </div>\
+    <div class="main-menu-content">\
+    <ul class="main-navigation"></ul>\
+    </div>\
      ');
     var data = {
         menu: [{

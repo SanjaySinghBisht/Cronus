@@ -188,7 +188,7 @@ $(document).ready(function() {
         align: "high"
       },
       labels: {
-        overflow: "justify"
+        overflow: " ustify"
       }
     },
     tooltip: {
