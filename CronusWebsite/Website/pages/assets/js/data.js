@@ -1,5 +1,5 @@
 {
-  "data": [
+  "data" [
     [
       "Tiger Nixon",
       "System Architect",

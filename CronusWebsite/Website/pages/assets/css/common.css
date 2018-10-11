@@ -1,7 +1,23 @@
 * {
     outline: none;
 }
+::-webkit-scrollbar
+{
+  width: 10px;  /* for vertical scrollbars */
+  height: 10px; /* for horizontal scrollbars */
+}
 
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px
+}
 .background-layout {
     background: #333;
     opacity: 0.6;
@@ -658,9 +674,9 @@ textarea[class*="copyPaste"] {
 }
 
 /*search input*/
-.input-group-addon .btn-primary:active {
-    background-color: #28e1bd !important;
-    border-color: #28e1bd; 
+.input-group-addon button[class*="btn-"] {
+    background-color: transparent !important;
+    border-color: transparent !important; 
 }
 /*search input*/
 /*Pastel colors*/
@@ -692,6 +708,29 @@ textarea[class*="copyPaste"] {
 .pastel-orange{
     background: #f5b994
 }
+/*pastel colors*/
+/*Popup*/
+.md-content-scroll {
+    max-height: 380px;
+    overflow-y: auto;
+    padding: 15px;
+    overflow-x: hidden;
+}
+.md-content .md-header h3 {
+    color: #fff;
+    margin: 0;
+    padding: 0.4em;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 300;
+    background: #1abc9c;
+    padding: 15px;
+    border-radius: 0;
+}
+.md-footer {
+    border-top: 1px solid #d9d9d9;
+}
+/*Popup*/
 @media (max-width:480px) {
     .row-status .label-main{
         display: block;
