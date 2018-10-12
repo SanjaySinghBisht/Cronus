@@ -128,43 +128,14 @@ $(document).ready(function() {
   </form>\
   </div>\
   </div>\
-  <div class="col-sm-12 col-md-12 form-group">\
-  <label for="reason">Reason</label>\
-  <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
-  </div>\
-  </div>\
-  </div>\
-  <div class="col-sm-12 col-md-6">\
-  <div class="row">\
-  <div class="col-md-6 col-lg-3">\
-  <label>Skip Approval</label>\
-  </div>\
-  <div class="col-md-6 col-lg-3">\
-  <div class="form-radio inline-block">\
-  <form>\
-  <div class="radio radio-inline">\
-  <label>\
-  <input class="popover-btn" tabindex="13" type="radio" name="approval">\
-  <i class="helper"></i>Yes\
-  </label>\
-  </div>\
-  <div class="radio radio-inline">\
-  <label>\
-  <input type="radio" tabindex="14" name="approval">\
-  <i class="helper"></i>No\
-  </label>\
-  </div>\
-  </form>\
-  </div>\
-  </div>\
-  <div class="col-sm-12 col-md-12 form-group">\
-  <label for="reason">Reason</label>\
-  <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
-  </div>\
   </div>\
   </div>\
   </div>\
   <div class="row">\
+  <div class="col-sm-12 col-md-3 form-group">\
+  <label for="reason">Reason</label>\
+  <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
+  </div>\
   <div class="col-sm-12 col-md-3">\
   <label for="Database">Database</label>\
   <div tabindex="2" class="select2-dd"></div>\
@@ -177,7 +148,7 @@ $(document).ready(function() {
   <label for="Query Name">Query Name</label>\
   <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
   </div>\
-  <div class="col-sm-12 col-md-3 text-right l-h-90">\
+  <div class="col-sm-12 col-md-12 text-right form-group">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
   <span>Save Query</span>\

@@ -579,10 +579,12 @@ span[class*="bg-"]:hover button {
     margin-bottom: 5px;
 }
 
+.swappedRow{
+    background: #aadaf0 !important;
+}
 .active-row {
     background: #b1f3cc !important;
 }
-
 .subject-info-arrows {
     position: absolute;
     top: 50%;

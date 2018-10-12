@@ -14,12 +14,39 @@ $(document).ready(function() {
     );
     $(".tab-pane").removeClass("active");
     $(
-      '<div class="tab-pane active" id="tab1" role="tabpanel"><div class="row"><div class="col-sm-12"><form action="#!"><div class="row m-t-10"><div class="col-md-3"><label>Skip Beta Execution</label></div><div class="col-md-3"><div class="form-radio inline-block m-l-10"><form><div class="radio radio-inline"><label><input class="popover-btn" type="radio" name="radio"><i class="helper"></i>Yes</label></div><div class="hidden popover-container"><form action="#!" id="popForm" method="get"><div><textarea rows="8" name="about" id="about" class="form-control input-md"></textarea><button type="button" id="saveBtn" class="btn m-t-5 btn-primary">\
+      '<div class="tab-pane active" id="tab1" role="tabpanel">\
+      <div class="row"><div class="col-sm-12">\
+      <form action="#!">\
+      <div class="row m-t-10">\
+      <div class="col-md-3">\
+      <label>Skip Beta Execution</label>\
+      </div>\
+      <div class="col-md-3">\
+      <div class="form-radio inline-block m-l-10">\
+      <form>\
+      <div class="radio radio-inline">\
+      <label><input class="popover-btn" type="radio" name="radio"><i class="helper"></i>Yes</label>\
+      </div>\
+      <div class="hidden popover-container">\
+      <form action="#!" id="popForm" method="get">\
+      <div>\
+      <textarea rows="8" name="about" id="about" class="form-control input-md">\
+      </textarea>\
+      <button type="button" id="saveBtn" class="btn m-t-5 btn-primary">\
         <i class="icofont icofont-check"></i> Save</button>\
         <button type="button" id="cancelBtn" class="btn m-t-5 btn-danger">\
         <i class="icofont icofont-close"></i> Cancel\
         </button>\
-        </div></form></div><div class="radio radio-inline"><label><input type="radio" name="radio"><i class="helper"></i>No</label></div></form></div></div></div>\
+        </div>\
+        </form>\
+        </div>\
+        <div class="radio radio-inline">\
+        <label><input type="radio" name="radio"><i class="helper"></i>No</label>\
+        </div>\
+        </form>\
+        </div>\
+        </div>\
+        </div>\
         <div class="row m-t-5">\
         <div class="col-md-6 col-sm-12">\
         <div class="row">\
