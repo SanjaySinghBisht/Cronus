@@ -789,9 +789,10 @@ textarea[class*="copyPaste"] {
     .main-body .page-wrapper .page-header-breadcrumb {
         display: none;
     }
-    /* .btn-text {
+    #userGroups .btn-text {
         display: none;
-    } */
+    }
+
     .p-chat-user {
         top: 50px;
     }

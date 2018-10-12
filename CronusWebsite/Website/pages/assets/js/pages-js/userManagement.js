@@ -1,4 +1,37 @@
 $(document).ready(function() {
+  /*Move rows between two tables*/
+  var stockTable = $(".group-username").dataTable({
+    bDestroy: true
+  }); // first table
+
+  var catalogTable = $(".non-group-username").dataTable({
+    bDestroy: true
+  }); // Second table
+
+  stockTable.on("click", "tbody tr td input", function() {
+    $(this).parents("tr").toggleClass("selected"); 
+  });
+  catalogTable.on("click", "tbody tr td input", function() {
+    $(this).parents("tr").toggleClass("selected"); 
+  });
+  $('#btnRight').on('click',function () {
+    moveRows(catalogTable, stockTable);
+  });
+   
+  $('#btnLeft').on('click',function () {
+    moveRows(stockTable, catalogTable);
+  });
+  function moveRows(fromTable, toTable){
+    var $row= fromTable.find(".selected");
+    $.each($row, function(k, v){
+      if(this != null){
+        addRow = fromTable.fnGetData(this);
+        toTable.fnAddData(addRow);
+        toTable.toggleClass("selected"); 
+        fromTable.fnDeleteRow(this); 
+      }
+    });
+  }
   var dataObject = [
     ["SBisht", "Sanjay Singh Bisht", "sanjay.bisht@pimco.com"],
     ["SBisht", "Sanjay Singh Bisht", "sanjay.bisht@pimco.com"],
@@ -59,7 +92,8 @@ $(document).ready(function() {
         sLengthMenu: " _MENU_ ",
         sSearch: "",
         sSearchPlaceholder: "Search"
-      }
+      },
+      bDestroy: true
     });
     $("#basic-btn-5").DataTable({
       responsive: true,
@@ -69,19 +103,22 @@ $(document).ready(function() {
         sLengthMenu: " _MENU_ ",
         sSearch: "",
         sSearchPlaceholder: "Search"
-      }
+      },
+      bDestroy: true
     });
   } else {
     $("#basic-btn-1,#basic-btn-2").DataTable({
       bLengthChange: false,
       bPaginate: false,
       scrollY: "400px",
-      responsive: true
+      responsive: true,
+      bDestroy: true
     });
     $("#basic-btn-5").DataTable({
       dom: "Bfrtip",
       buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"],
-      responsive: true
+      responsive: true,
+      bDestroy: true
     });
   }
 });

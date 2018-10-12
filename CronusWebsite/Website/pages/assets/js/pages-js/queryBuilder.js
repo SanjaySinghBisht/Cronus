@@ -70,16 +70,20 @@ $(document).ready(function() {
   <div class="row text-right">\
   <div class="col-md-12">\
   <button type="button" tabindex="7"  class="btn btn-warning">\
-  <i class="icofont icofont-refresh"></i><span class="btn-text">Reset</span>\
+  <i class="icofont icofont-refresh"></i>\
+  <span class="btn-text">Reset</span>\
   </button>\
   <button type="button" tabindex="8"  class="btn btn-info">\
-  <i class="icofont icofont-edit"></i><span class="btn-text">Edit</span>\
+  <i class="icofont icofont-edit"></i>\
+  <span class="btn-text">Edit</span>\
   </button>\
   <button type="button" tabindex="9"  class="btn btn-success">\
-  <i class="icofont icofont-hand-up"></i><span class="btn-text">Save</span>\
+  <i class="icofont icofont-hand-up"></i>\
+  <span class="btn-text">Save</span>\
   </button>\
   <button type="button"  tabindex="10"  id="createJira" class="btn btn-primary">\
-  <i class="icofont icofont-hand-up"></i><span class="btn-text">Create JIRA Ticket</span>\
+  <i class="icofont icofont-hand-up"></i>\
+  <span class="btn-text">Create JIRA Ticket</span>\
   </button>\
   </div>\
   </div>\
@@ -90,15 +94,18 @@ $(document).ready(function() {
   <div class="col-sm-12">\
   <form action="#!">\
   <div class="row">\
-  <div class="col-md-3">\
+  <div class="col-sm-12 col-md-6">\
+  <div class="row">\
+  <div class="col-md-6 col-lg-3">\
   <label>Skip Beta Execution</label>\
   </div>\
-  <div class="col-md-3">\
+  <div class="col-md-6 col-lg-3">\
   <div class="form-radio inline-block">\
   <form>\
   <div class="radio radio-inline">\
   <label>\
-  <input class="popover-btn" tabindex="11" type="radio" name="radio"><i class="helper"></i>Yes\
+  <input class="popover-btn" tabindex="11" type="radio" name="radio">\
+  <i class="helper"></i>Yes\
   </label>\
   </div>\
   <div class="hidden popover-container">\
@@ -106,11 +113,9 @@ $(document).ready(function() {
   <div>\
   <textarea rows="8" name="about" id="about" class="form-control input-md"></textarea>\
   <button type="button" id="saveBtn" class="btn m-t-5 btn-primary">\
-  <i class="icofont icofont-check"></i> Save\
-  </button>\
+  <i class="icofont icofont-check"></i> Save</button>\
   <button type="button" id="cancelBtn" class="btn m-t-5 btn-danger">\
-  <i class="icofont icofont-close"></i> Cancel\
-  </button>\
+  <i class="icofont icofont-close"></i> Cancel</button>\
   </div>\
   </form>\
   </div>\
@@ -123,54 +128,62 @@ $(document).ready(function() {
   </form>\
   </div>\
   </div>\
-  <div class="col-md-3">\
+  <div class="col-sm-12 col-md-12 form-group">\
+  <label for="reason">Reason</label>\
+  <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
+  </div>\
+  </div>\
+  </div>\
+  <div class="col-sm-12 col-md-6">\
+  <div class="row">\
+  <div class="col-md-6 col-lg-3">\
   <label>Skip Approval</label>\
   </div>\
-  <div class="col-md-3">\
+  <div class="col-md-6 col-lg-3">\
   <div class="form-radio inline-block">\
-  <form><div class="radio radio-inline">\
+  <form>\
+  <div class="radio radio-inline">\
   <label>\
   <input class="popover-btn" tabindex="13" type="radio" name="approval">\
-  <i class="helper"></i>Yes</label>\
+  <i class="helper"></i>Yes\
+  </label>\
   </div>\
   <div class="radio radio-inline">\
   <label>\
-  <input tabindex="14" type="radio" name="approval"><i class="helper"></i>No</label>\
+  <input type="radio" tabindex="14" name="approval">\
+  <i class="helper"></i>No\
+  </label>\
   </div>\
   </form>\
   </div>\
   </div>\
-  </div>\
-  <div class="row m-t-5">\
-  <div class="col-md-6 col-sm-12">\
-  <div class="row">\
-  <div class="col-sm-12 col-md-6 form-group">\
+  <div class="col-sm-12 col-md-12 form-group">\
   <label for="reason">Reason</label>\
   <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
-  </div> \
-  <div class="col-sm-12 col-md-6">\
+  </div>\
+  </div>\
+  </div>\
+  </div>\
+  <div class="row">\
+  <div class="col-sm-12 col-md-3">\
   <label for="Database">Database</label>\
   <div tabindex="2" class="select2-dd"></div>\
-  </div> \
-  <div class="col-sm-12 col-md-6 form-group">\
+  </div>\
+  <div class="col-sm-12 col-md-3 form-group">\
   <label for="Category">Category</label>\
   <input type="text" tabindex="3" class="form-control" placeholder="Category">\
-  </div> \
-  <div class="col-sm-12 col-md-6 form-group">\
+  </div>\
+  <div class="col-sm-12 col-md-3 form-group">\
   <label for="Query Name">Query Name</label>\
   <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
   </div>\
-  </div>\
-  <div class="form-group text-right row">\
-  <div class="col-sm-12">\
+  <div class="col-sm-12 col-md-3 text-right l-h-90">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
   <span>Save Query</span>\
   </button>\
   </div>\
   </div>\
-  </div>\
-  <div class="col-md-6 col-sm-12">\
   <div class="form-group row">\
   <div class="col-sm-12">\
   <a class="full-screen">\
@@ -180,13 +193,13 @@ $(document).ready(function() {
   </div>\
   </div>\
   <div class="row">\
-  <div class="col-sm-12 form-group col-md-6">\
+  <div class="col-sm-12 form-group col-md-3">\
   <input type="text" tabindex="20" class="form-control" placeholder="Expected rows effected eg 100">\
   </div>\
-  <div class="col-sm-12 col-md-6">\
+  <div class="col-sm-12 col-md-3">\
   <div tabindex="7" tabindex="21" class="select2-dd"></div>\
   </div>\
-  <div class="col-sm-12 text-right">\
+  <div class="col-sm-12 col-md-6 text-right">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
   <span>Save Query</span>\
@@ -203,8 +216,6 @@ $(document).ready(function() {
   <i class="icofont icofont-ui-reply"></i>\
   <span>Rollback</span>\
   </button>\
-  </div>\
-  </div>\
   </div>\
   </div>\
   </form>\

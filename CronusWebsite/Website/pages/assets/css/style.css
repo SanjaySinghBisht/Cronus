@@ -8844,8 +8844,7 @@ table.dataTable {
 }
 
 table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
-    background-color: #1abc9c;
-    color: #fff
+    background-color: #b1f3cc; 
 }
 
 table.dataTable td.select-checkbox:before, table.dataTable th.select-checkbox:before {
