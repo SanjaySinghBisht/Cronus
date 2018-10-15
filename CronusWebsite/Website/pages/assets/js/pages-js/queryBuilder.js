@@ -96,10 +96,8 @@ $(document).ready(function() {
   <div class="row">\
   <div class="col-sm-12 col-md-6">\
   <div class="row">\
-  <div class="col-md-6 col-lg-3">\
+  <div class="col-md-12">\
   <label>Skip Beta Execution</label>\
-  </div>\
-  <div class="col-md-6 col-lg-3">\
   <div class="form-radio inline-block">\
   <form>\
   <div class="radio radio-inline">\
