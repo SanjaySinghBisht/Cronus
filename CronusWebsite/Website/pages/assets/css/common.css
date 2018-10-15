@@ -1,23 +1,24 @@
 * {
     outline: none;
 }
-::-webkit-scrollbar
-{
-  width: 10px;  /* for vertical scrollbars */
-  height: 10px; /* for horizontal scrollbars */
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* for vertical scrollbars */
+    height: 10px;
+    /* for horizontal scrollbars */
 }
 
-::-webkit-scrollbar-track
-{
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px
 }
 
-::-webkit-scrollbar-thumb
-{
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px
 }
+
 .background-layout {
     background: #333;
     opacity: 0.6;
@@ -128,7 +129,7 @@ a.handle, .color-picker {
 }
 
 .bg-lightblue {
-    background: #778ea5;
+    background: #0f4b7d;
     color: #ffffff;
 }
 
@@ -257,6 +258,10 @@ a.handle, .color-picker {
 }
 
 /*Datatable in Grids*/
+
+table th, table td {
+    font-size: 12px;
+}
 
 .highlight td {
     background: #c1efb6;
@@ -477,7 +482,7 @@ input.htCheckboxRendererInput:checked:after {
     width: 100%;
 }
 
-.jira-details,.database-snapshot {
+.jira-details, .database-snapshot {
     padding: 20px;
     border: 1px dashed #96cb83;
     background: #f6fff3;
@@ -500,15 +505,15 @@ input.htCheckboxRendererInput:checked:after {
     cursor: pointer;
 }
 
-.full-screen.full-screen-expanded{
+.full-screen.full-screen-expanded {
     right: 8px;
 }
 
-label + .full-screen{
-top: 35px;
+label+.full-screen {
+    top: 35px;
 }
 
-label + .full-screen.full-screen-expanded{
+label+.full-screen.full-screen-expanded {
     top: 8px;
 }
 
@@ -579,12 +584,14 @@ span[class*="bg-"]:hover button {
     margin-bottom: 5px;
 }
 
-.swappedRow{
+.swappedRow {
     background: #aadaf0 !important;
 }
+
 .active-row {
     background: #b1f3cc !important;
 }
+
 .subject-info-arrows {
     position: absolute;
     top: 50%;
@@ -671,57 +678,72 @@ textarea[class*="copyPaste"] {
     visibility: hidden;
 }
 
-.impact-study-form{
+.impact-study-form {
     display: none;
 }
 
-.input-textarea{
+.input-textarea {
     max-height: 32px;
 }
 
 /*search input*/
+
 .input-group-addon button[class*="btn-"] {
     background-color: transparent !important;
-    border-color: transparent !important; 
+    border-color: transparent !important;
 }
+
 /*search input*/
+
 /*Pastel colors*/
-.pastel-bg{
+
+.pastel-bg {
     border-radius: 4px;
     font-size: 12px;
     padding: 4px 7px;
     margin-right: 5px;
     color: #3e3e3e !important;
 }
-.pastel-purple{
+
+.pastel-purple {
     background: #a3b5fd
 }
-.pastel-indigo{
+
+.pastel-indigo {
     background: #c3c5f8
 }
-.pastel-blue{
+
+.pastel-blue {
     background: #b3eef6
 }
-.pastel-pink{
+
+.pastel-pink {
     background: #ffc3df
 }
-.pastel-red{
+
+.pastel-red {
     background: #e49aab
 }
-.pastel-green{
+
+.pastel-green {
     background: #b3ddd1
 }
-.pastel-orange{
+
+.pastel-orange {
     background: #f5b994
 }
+
 /*pastel colors*/
+
 /*Popup*/
+
 .md-content-scroll {
     max-height: 380px;
     overflow-y: auto;
     padding: 15px;
     overflow-x: hidden;
 }
+
 .md-content .md-header h3 {
     color: #fff;
     margin: 0;
@@ -733,19 +755,20 @@ textarea[class*="copyPaste"] {
     padding: 15px;
     border-radius: 0;
 }
+
 .md-footer {
     border-top: 1px solid #d9d9d9;
 }
+
 /*Popup*/
+
 @media (max-width:480px) {
-    .row-status .label-main{
+    .row-status .label-main {
         display: block;
     }
-
-    .row-status .label-main .label{
+    .row-status .label-main .label {
         width: 100%
     }
-
     .btn {
         width: 100%;
         margin: 5px 0px;
@@ -756,16 +779,16 @@ textarea[class*="copyPaste"] {
     button.dt-button, div.dt-button, a.dt-button {
         padding: 0.5em 0.5em !important;
     }
-    .tree-1.open{
+    .tree-1.open {
         padding-left: 15px;
     }
-    .tree-1.open a:after{
+    .tree-1.open a:after {
         content: none;
     }
 }
 
 @media (min-width:320px) and (max-width: 767px) {
-    .btn-div[class*="m-"]{
+    .btn-div[class*="m-"] {
         margin: auto;
     }
     .sec-analytic-files-list .task-board {
@@ -794,7 +817,6 @@ textarea[class*="copyPaste"] {
     #userGroups .btn-text {
         display: none;
     }
-
     .p-chat-user {
         top: 50px;
     }
@@ -839,10 +861,10 @@ textarea[class*="copyPaste"] {
     .high-charts {
         max-width: 280px;
     }
-    .tree-1.open{
+    .tree-1.open {
         padding-left: 15px;
     }
-    .tree-1.open a:after{ 
+    .tree-1.open a:after {
         content: none;
     }
 }

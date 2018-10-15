@@ -12,12 +12,12 @@ $(document).ready(function () {
     $(".md-modal").css("margin-left", -width).css("margin-top", -height);
     /*Center align popup window */
     /*Enable responsive feature of datatables in tabs/accordion */
-    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        $($.fn.dataTable.tables(true)).DataTable()
-            .columns.adjust()
-            .responsive.recalc();
-        $(".export-btn-table").parents(".dataTables_wrapper").find(".dataTables_filter").addClass("full-width-search");
-    });
+    // $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    //     $($.fn.dataTable.tables(true)).DataTable()
+    //         .columns.adjust()
+    //         .responsive.recalc();
+    //     $(".export-btn-table").parents(".dataTables_wrapper").find(".dataTables_filter").addClass("full-width-search");
+    // });
     $('#accordion').on('shown.bs.collapse', function (e) {
         $($.fn.dataTable.tables(true)).DataTable()
             .columns.adjust()

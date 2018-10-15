@@ -155,6 +155,7 @@ $(document).ready(function() {
   </div>\
   <div class="form-group row">\
   <div class="col-sm-12">\
+  <label for="Query">Query</label>\
   <a class="full-screen">\
   <i class="icofont icofont-resize ft-20"></i>\
   </a>\
@@ -323,12 +324,21 @@ $(document).ready(function() {
       placeholder: "Select Value",
       allowClear: true
     });
-    $(".popover-btn").popover({
-      placement: "right",
-      title: "Please specify the Reason",
-      html: true,
-      content: $(".popover-container").html()
-    });
+    if (width <= 768) {
+      $(".popover-btn").popover({
+        placement: "bottom",
+        title: "Please specify the Reason",
+        html: true,
+        content: $(".popover-container").html()
+      });
+    } else {
+      $(".popover-btn").popover({
+        placement: "right",
+        title: "Please specify the Reason",
+        html: true,
+        content: $(".popover-container").html()
+      });
+    }
     $(".jiraId").tokenfield({
       limit: 1
     });
@@ -386,12 +396,21 @@ $(document).ready(function() {
       responsive: true
     });
   }
-  $(".popover-btn").popover({
-    placement: "right",
-    title: "Please specify the Reason",
-    html: true,
-    content: $(".popover-container").html()
-  });
+  if (width <= 768) {
+    $(".popover-btn").popover({
+      placement: "bottom",
+      title: "Please specify the Reason",
+      html: true,
+      content: $(".popover-container").html()
+    });
+  } else {
+    $(".popover-btn").popover({
+      placement: "right",
+      title: "Please specify the Reason",
+      html: true,
+      content: $(".popover-container").html()
+    });
+  }
   $(".select2-dd").select2({
     placeholder: "Select Value",
     allowClear: true

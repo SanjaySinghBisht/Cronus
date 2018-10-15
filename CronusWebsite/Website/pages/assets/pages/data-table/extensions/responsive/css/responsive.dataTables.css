@@ -32,7 +32,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
     box-sizing: content-box;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    line-height: 16px;
+    line-height: 18px;
     content: '+';
     background-color: #31b131
 }

@@ -15,52 +15,18 @@ $(document).ready(function() {
     $(".tab-pane").removeClass("active");
     $(
       '<div class="tab-pane active" id="tab1" role="tabpanel">\
-      <div class="row"><div class="col-sm-12">\
-      <form action="#!">\
-      <div class="row m-t-10">\
-      <div class="col-md-3">\
-      <label>Skip Beta Execution</label>\
-      <div class="form-radio inline-block m-l-10">\
-      <form>\
-      <div class="radio radio-inline">\
-      <label><input class="popover-btn" type="radio" name="radio"><i class="helper"></i>Yes</label>\
-      </div>\
-      <div class="hidden popover-container">\
-      <form action="#!" id="popForm" method="get">\
-      <div>\
-      <textarea rows="8" name="about" id="about" class="form-control input-md">\
-      </textarea>\
-      <button type="button" id="saveBtn" class="btn m-t-5 btn-primary">\
-        <i class="icofont icofont-check"></i> Save</button>\
-        <button type="button" id="cancelBtn" class="btn m-t-5 btn-danger">\
-        <i class="icofont icofont-close"></i> Cancel\
-        </button>\
-        </div>\
-        </form>\
-        </div>\
-        <div class="radio radio-inline">\
-        <label><input type="radio" name="radio"><i class="helper"></i>No</label>\
-        </div>\
-        </form>\
-        </div>\
-        </div>\
-        </div>\
         <div class="row m-t-5">\
         <div class="col-md-6 col-sm-12">\
         <div class="row">\
-        <div class="col-sm-12 col-md-6 form-group">\
-        <label for="reason">Reason</label>\
-        <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
-        </div> \
-        <div class="col-sm-12 col-md-6">\
+        <div class="col-sm-12 col-md-4">\
         <label for="Database">Database</label>\
         <div tabindex="2" class="select2-dd"></div>\
         </div> \
-        <div class="col-sm-12 col-md-6 form-group">\
+        <div class="col-sm-12 col-md-4 form-group">\
         <label for="Category">Category</label>\
         <input type="text" tabindex="3" class="form-control" placeholder="Category">\
         </div> \
-        <div class="col-sm-12 col-md-6 form-group">\
+        <div class="col-sm-12 col-md-4 form-group">\
         <label for="Query Name">Query Name</label>\
         <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
         </div>\
@@ -77,6 +43,7 @@ $(document).ready(function() {
         <div class="col-md-6 col-sm-12">\
         <div class="form-group row">\
         <div class="col-sm-12">\
+        <label for="Query">Query</label>\
         <a class="full-screen">\
         <i class="icofont icofont-resize ft-20"></i>\
         </a>\
