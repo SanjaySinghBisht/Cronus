@@ -20,8 +20,6 @@ $(document).ready(function() {
       <div class="row m-t-10">\
       <div class="col-md-3">\
       <label>Skip Beta Execution</label>\
-      </div>\
-      <div class="col-md-3">\
       <div class="form-radio inline-block m-l-10">\
       <form>\
       <div class="radio radio-inline">\
@@ -105,12 +103,21 @@ $(document).ready(function() {
       placeholder: "Select",
       allowClear: true
     });
-    $(".popover-btn").popover({
-      placement: "right",
-      title: "Please specify the Reason",
-      html: true,
-      content: $(".popover-container").html()
-    });
+    if (width <= 768) {
+      $(".popover-btn").popover({
+        placement: "bottom",
+        title: "Please specify the Reason",
+        html: true,
+        content: $(".popover-container").html()
+      });
+    } else {
+      $(".popover-btn").popover({
+        placement: "right",
+        title: "Please specify the Reason",
+        html: true,
+        content: $(".popover-container").html()
+      });
+    }
     $(".basic-btn-1").DataTable({
       destroy: true,
       dom: "Bfrtip",
@@ -161,12 +168,21 @@ $(document).ready(function() {
       buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"]
     });
   }
-  $(".popover-btn").popover({
-    placement: "right",
-    title: "Please specify the Reason",
-    html: true,
-    content: $(".popover-container").html()
-  });
+  if (width <= 768) {
+    $(".popover-btn").popover({
+      placement: "bottom",
+      title: "Please specify the Reason",
+      html: true,
+      content: $(".popover-container").html()
+    });
+  } else {
+    $(".popover-btn").popover({
+      placement: "right",
+      title: "Please specify the Reason",
+      html: true,
+      content: $(".popover-container").html()
+    });
+  }
   $(".select2-dd").select2({
     placeholder: "Select Value",
     allowClear: true
