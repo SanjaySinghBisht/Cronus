@@ -154,6 +154,13 @@ $(document).ready(function () {
                         sub: null,
                         menucounter: '2',
                         icon: '<i class="icofont icofont-database"></i>'
+                    },
+                    {
+                        name: 'Data Manipulation',
+                        link: 'DataManipulation.html',
+                        sub: null,
+                        menucounter: '2',
+                        icon: '<i class="icofont icofont-database"></i>'
                     }
                 ],
                 icon: '<i class="icofont icofont-database-locked"></i>',
