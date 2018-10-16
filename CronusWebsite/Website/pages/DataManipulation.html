@@ -86,13 +86,13 @@
             <div class="page-body">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="row">
-                        <div class=" col-sm-12">
+                        <div class=" col-sm-12 col-md-3 col-lg-2">
                             <div class="panel panel-default">
                                 <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
-                                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion">
                                         <a role="button" aria-expanded="true" aria-controls="collapseOne">
-                                            <i class="icon icon-minus-sign pull-right"></i>
-                                            Invocation Summary
+                                            <!-- <i class="icon icon-minus-sign pull-right"></i> -->
+                                            Data Manipulation
                                         </a>
                                     </h4>
                                 </div>
@@ -109,61 +109,20 @@
                                                 <!-- Tab panes -->
                                                 <form>
                                                     <div class="row">
-                                                        <div class="col-lg-2 col-md-4 col-sm-12">
-                                                            <div class="form-radio">
-                                                                <form>
-                                                                    <div class="radio radio-inline">
-                                                                        <label>
-                                                                            <input type="radio" name="radio" checked="checked">
-                                                                            <i class="helper "></i>SSM ID
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="radio radio-inline">
-                                                                        <label>
-                                                                            <input type="radio" name="radio">
-                                                                            <i class="helper"></i>SSM ID Table
-                                                                        </label>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-2 col-md-4 col-sm-12">
-                                                            <input type="text" class="form-control" placeholder="Comma[,] separated list of Cusip/Table" />
-                                                        </div>
-                                                        <div class="col-lg-2 col-md-4 col-sm-12">
-                                                            <div class="form-group">
-                                                                <!-- <label class="hidden-xl-up" for="pricedate">Price Date</label> -->
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control date floating-label" placeholder="Price Date">
-                                                                    <span class="input-group-addon">
-                                                                        <i class="icofont icofont-ui-calendar"></i>
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-2 col-md-4 col-sm-12">
-                                                            <div class="form-radio">
-                                                                <form>
-                                                                    <div class="radio radio-inline">
-                                                                        <label>
-                                                                            <input type="radio" name="radio" checked="checked">
-                                                                            <i class="helper "></i>Risk Measure Table
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="radio radio-inline">
-                                                                        <label>
-                                                                            <input type="radio" name="radio">
-                                                                            <i class="helper"></i>Favourites
-                                                                        </label>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-2 col-md-4 col-sm-12">
+
+                                                        <div class="col-sm-12">
+                                                            <label for="tableName" class="required-field"> Table Name</label>
                                                             <div class="select2-dd"></div>
-                                                        </div> 
-                                                        <div class="col-lg-2 col-md-4 col-sm-12">
-                                                            <button type="button" id="run" class="btn btn-primary pull-right">
+                                                        </div>
+                                                        <div class="col-sm-12">
+                                                            <label for="where"> Where</label>
+                                                            <a class="full-screen">
+                                                                <i class="icofont icofont-resize ft-20"></i>
+                                                            </a>
+                                                            <textarea cols="5" rows="5" class="form-control"></textarea>
+                                                        </div>
+                                                        <div class="col-sm-12 m-t-10 text-right">
+                                                            <button type="button" class="btn btn-primary">
                                                                 <i class="icofont icofont-search-alt-1"></i>
                                                                 <span class="btn-text">Search</span>
                                                             </button>
@@ -176,589 +135,263 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" col-sm-12">
+                        <div class=" col-sm-12 col-md-9 col-lg-10">
                             <div class="panel panel-default">
                                 <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
                                     <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                         <a role="button" aria-expanded="true" aria-controls="collapseTwo">
-                                            <i class="icon icon-plus-sign pull-right"></i>
-                                            Stale Risk Measures
+                                            <i class="icon icon-minus-sign pull-right"></i>
+                                            Output
                                         </a>
                                     </h4>
                                 </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseTwo">
+                                <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="collapseTwo">
                                     <div class="panel-body p-15">
                                         <div class="row">
-                                            <div class="col-lg-12">
-                                                <!-- Nav tabs -->
-                                                <ul class="nav nav-tabs query-tabs tabs" role="tablist">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab">srm_ora</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">srm1_ora</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">srm2_ora</a>
-                                                    </li>
-                                                </ul>
-                                                <!-- Tab panes -->
-                                                <div class="tab-content  tabs tabs-container">
-                                                    <div class="tab-pane active p-t-10" id="tab1" role="tabpanel">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="dt-responsive table-responsive">
-                                                                    <table id="basic-btn-1" class="table export-btn-table table-striped table-bordered nowrap">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>ASOF_DATE</th>
-                                                                                <th>SSM_ID</th>
-                                                                                <th>PRICE</th>
-                                                                                <th>DURATION_!</th>
-                                                                                <th>CONVEXITY</th>
-                                                                                <th>CURVE_DURATION</th>
-                                                                                <th>YIELD_TO_WORST</th>
-                                                                                <th>SPREAD</th>
-                                                                                <th>MOODY</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                                <td>0</td>
-                                                                                <td>Test</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane p-t-10" id="tab2" role="tabpanel">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="dt-responsive table-responsive">
-                                                                    <table id="basic-btn-2" class="table export-btn-table table-striped table-bordered nowrap">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>ASOF_DATE</th>
-                                                                                <th>SSM_ID</th>
-                                                                                <th>PRICE</th>
-                                                                                <th>DURATION_!</th>
-                                                                                <th>CONVEXITY</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane p-t-10" id="tab3" role="tabpanel">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="dt-responsive table-responsive">
-                                                                    <table id="basic-btn-3" class="table export-btn-table table-striped table-bordered nowrap">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th>ASOF_DATE</th>
-                                                                                <th>SSM_ID</th>
-                                                                                <th>PRICE</th>
-                                                                                <th>DURATION_!</th>
-                                                                                <th>CONVEXITY</th>
-                                                                                <th>CURVE_DURATION</th>
-                                                                                <th>YIELD_TO_WORST</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td>12/12/2018 12:11:29:00</td>
-                                                                                <td>902190921</td>
-                                                                                <td>100,009</td>
-                                                                                <td>0.9181889189891</td>
-                                                                                <td>0</td>
-                                                                                <td>0.823872378237823</td>
-                                                                                <td>0.0198</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div class="m-t-15 col-md-3 col-sm-12">
+                                                <div class="select2-dd"></div>
+                                            </div>
+                                            <div class="m-t-15 col-md-9 col-sm-12 text-right">
+                                                <button class="btn btn-success">
+                                                    <i class="icofont icofont-plus"></i>
+                                                    <span class="btn-text">Add</span>
+                                                </button>
+                                                <button class="btn btn-warning">
+                                                    <i class="icofont icofont-edit"></i>
+                                                    <span class="btn-text">Edit</span>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="icofont icofont-trash"></i>
+                                                    <span class="btn-text">Delete</span>
+                                                </button>
+                                                <button class="btn btn-primary">
+                                                    <i class="icofont icofont-ui-copy"></i>
+                                                    <span class="btn-text">Clone</span>
+                                                </button>
+                                                <button class="btn btn-primary">
+                                                    <i class="icofont icofont-hand-up"></i>
+                                                    <span class="btn-text">Save</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="dt-responsive table-responsive">
+                                                    <table id="basic-btn-1" class="table export-btn-table table-striped table-bordered nowrap">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>ASOF_DATE</th>
+                                                                <th>SSM_ID</th>
+                                                                <th>PRICE</th>
+                                                                <th>DURATION_!</th>
+                                                                <th>CONVEXITY</th>
+                                                                <th>CURVE_DURATION</th>
+                                                                <th>YIELD_TO_WORST</th>
+                                                                <th>SPREAD</th>
+                                                                <th>MOODY</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>12/12/2018 12:11:29:00</td>
+                                                                <td>902190921</td>
+                                                                <td>100,009</td>
+                                                                <td>0.9181889189891</td>
+                                                                <td>0</td>
+                                                                <td>0.823872378237823</td>
+                                                                <td>0.0198</td>
+                                                                <td>0</td>
+                                                                <td>Test</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
