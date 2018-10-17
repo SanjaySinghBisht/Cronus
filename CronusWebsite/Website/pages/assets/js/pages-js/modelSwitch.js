@@ -157,14 +157,14 @@ $(document).ready(function() {
       autoColumnSize: false,
       rowHeaders: true,
       colHeaders: true,
-      // filters: true,
+      filters: true,
       dropdownMenu: true,
       stretchH: "all",
       autoWrapRow: true,
       maxRows: 10,
       manualRowResize: true,
       manualColumnResize: true,
-      rowHeaders: true,
+      rowHeaders: false,
       colHeaders: function(col) {
         switch (col) {
           case 0:
@@ -203,9 +203,7 @@ $(document).ready(function() {
       }
     });
     searchFiled2 = document.getElementById("force-include-skip");
-    debugger;
     Handsontable.dom.addEvent(searchFiled2, "keyup", function(event) {
-      debugger;
       var search = hot2.getPlugin("search");
       var queryResult = search.query(this.value);
       console.log(queryResult);

@@ -147,7 +147,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     color: #222;
     text-align: center;
     font-weight: normal;
-    white-space: nowrap
+    white-space: nowrap;
+    height: 22px !important;
 }
 
 .handsontable .text-inverse {

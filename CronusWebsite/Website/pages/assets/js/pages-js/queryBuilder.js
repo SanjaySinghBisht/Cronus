@@ -26,7 +26,7 @@ $(document).ready(function() {
   <div class="col-md-12">\
   <form class="jira-details" action="#!">\
   <div class="row">\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <div class="input-group input-group-button">\
   <input type="text" tabindex="1" class="form-control jiraId" placeholder="Jira ID">\
   <span class="input-group-addon" id="basic-addon10">\
@@ -37,32 +37,30 @@ $(document).ready(function() {
   </span>\
   </div>\
   </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <input type="text" tabindex="2" class="form-control" placeholder="Summary">\
   </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label class="l-h-34"><strong>Jira Status:</strong> <span>InProgress</span></label>\
   </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label class="l-h-34">\
   <strong>Beta Execution Status:</strong> <span>Done</span>\
   </label>\
   </div>\
-  </div>\
-  <div class="row">\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label for="Request Type">Request Type</label>\
   <div tabindex="4" class="select2-dd"></div>\
   </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label for="Group Responsible">Group Responsible</label>\
   <div tabindex="5" class="select2-dd"></div>\
   </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label for="Team Responsible">Team Responsible</label>\
   <div tabindex="3" class="select2-dd"></div>\
   </div>\
-  <div class="col-md-6 col-lg-3 col-sm-12">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label for="Approver">Approver</label>\
   <div tabindex="6" class="select2-dd"></div>\
   </div>\
@@ -130,26 +128,26 @@ $(document).ready(function() {
   </div>\
   </div>\
   <div class="row">\
-  <div class="col-sm-12 col-md-3 form-group">\
+  <div class="col-sm-12 col-md-6 col-lg-3 form-group">\
   <label for="reason">Reason</label>\
   <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
   </div>\
-  <div class="col-sm-12 col-md-3">\
+  <div class="col-sm-12 col-md-6 col-lg-3">\
   <label for="Database">Database</label>\
   <div tabindex="2" class="select2-dd"></div>\
   </div>\
-  <div class="col-sm-12 col-md-3 form-group">\
+  <div class="col-sm-12 col-md-6 col-lg-3 form-group">\
   <label for="Category">Category</label>\
   <input type="text" tabindex="3" class="form-control" placeholder="Category">\
   </div>\
-  <div class="col-sm-12 col-md-3 form-group">\
+  <div class="col-sm-12 col-md-6 col-lg-3 form-group">\
   <label for="Query Name">Query Name</label>\
   <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
   </div>\
   <div class="col-sm-12 col-md-12 text-right form-group">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
-  <span>Save Query</span>\
+  <span>Save</span>\
   </button>\
   </div>\
   </div>\
@@ -163,13 +161,13 @@ $(document).ready(function() {
   </div>\
   </div>\
   <div class="row">\
-  <div class="col-sm-12 form-group col-md-3">\
+  <div class="col-sm-12 form-group col-md-6 col-lg-3">\
   <input type="text" tabindex="20" class="form-control" placeholder="Expected rows effected eg 100">\
   </div>\
-  <div class="col-sm-12 col-md-3">\
+  <div class="col-sm-12 col-md-6 col-lg-2">\
   <div tabindex="7" tabindex="21" class="select2-dd"></div>\
   </div>\
-  <div class="col-sm-12 col-md-6 text-right">\
+  <div class="col-sm-12 col-md-12 col-lg-7 text-right">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
   <span>Save Query</span>\

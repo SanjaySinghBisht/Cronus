@@ -7484,7 +7484,8 @@ body.menu-sidebar .navbar-wrapper {
 
 .input-group-addon {
     background-color: #1abc9c;
-    color: #fff
+    color: #fff;
+    border: none;
 }
 
 .input-group-button [class*=btn-] {

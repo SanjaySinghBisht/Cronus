@@ -93,9 +93,26 @@
                                         <span class="btn-text">Search</span>
                                     </button>
                                 </span>
-                            </div>
-                            <a style="font-size: 12px;color:grey;position:relative;top: -10px;" href="#" data-toggle="popover" data-popover="true" data-html="true"
-                                title="CSV format of Data File" data-content="<table class='table table-striped'><thead><tr><td>SSM ID<sup>*</sup></td><td>Analytic ID <sup>*</sup></td><td>SSM ID
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="icon icon-minus-sign pull-right"></i>
+                                    Add / Update / Delete
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body p-15">
+                                <div class="row m-t-15">
+                                    <div class="col-md-6 col-lg-6 col-xl-3 col-sm-12">
+                                        <div class="form-group">
+                                            <input tabindex="5" class="file fileinput" multiple type="file">
+                                            <a id="csv-format" style="font-size: 12px;color:grey;position:relative;top: -10px;" href="#" data-toggle="popover" data-popover="true"
+                                data-html="true" title="CSV format of Data File" data-content="<table class='table table-striped'><thead><tr><td>SSM ID<sup>*</sup></td><td>Analytic ID <sup>*</sup></td><td>SSM ID
                                 <sup>*</sup></td><td>Analytic Value<sup>*</sup></td><td>Expiration Date<sup>*</sup></td><td>BackUp Metric<sup>*</sup></td><td>Note<sup>*</sup></td></thead> <tbody><tr>
                                     <td>Val</td>
                                     <td>Val</td>
@@ -113,26 +130,9 @@
                                     <td>Val</td>
                                     <td>Val</td>
                                 </tr></tbody></table>">Format of file should be as per format</a>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
-                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                <a role="button" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="icon icon-minus-sign pull-right"></i>
-                                    Add / Update / Delete
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body p-15">
-                                <div class="row m-t-15">
-                                    <div class="col-md-4 col-lg-3 col-sm-12">
-                                        <div class="form-group">
-                                            <input tabindex="5" class="file fileinput" multiple type="file">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-lg-3  col-sm-12 m-t-5">
+                                    <div class="col-md-6 col-lg-6 col-xl-2 col-sm-12 m-t-5">
                                         <div class="checkbox-fade md-block fade-in-primary">
                                             <label>
                                                 <input type="checkbox" value="">
@@ -159,7 +159,15 @@
                                             <i class="icofont icofont-refresh"></i>
                                             <span class="btn-text">Reset</span>
                                         </button>
-                                        <button class="btn btn-success">
+                                        <button id="add-update" class="btn btn-success" data-toggle="popover" data-popover="true" data-html="true" data-content="<p> Mandatory fields</p>
+                                        <ol>
+                                            <li>SSSM ID(max length -9)</li>
+                                            <li>Analytic ID</li>
+                                            <li>Value</li>
+                                            <li>Expiration date (minimum today's date)</li>
+                                            <li>Backup Metric</li>
+                                            <li>Note</li>
+                                        </ol>">
                                             <i class="icofont icofont-plus"></i>
                                             <span class="btn-text">Add/Update</span>
                                         </button>

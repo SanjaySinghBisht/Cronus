@@ -3,8 +3,13 @@ $(document).ready(function() {
     showCaption: false,
     dropZoneEnabled: true
   });
-  $('[data-toggle="popover"]').popover({
-    trigger: "hover"
+  $('#csv-format').popover({
+    trigger: "hover",
+    placement: "right"
+  });
+  $('#add-update').popover({
+    trigger: "hover",
+    placement: "left"
   });
   var dataObject = [
     [

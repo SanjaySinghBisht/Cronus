@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>CRONUS</title>
     <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
@@ -12,8 +13,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" >
-    <meta name="keywords"  >
+    <meta name="description">
+    <meta name="keywords">
     <meta name="author" content="Sanjay Singh Bisht">
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
@@ -38,14 +39,16 @@
     <!--Select2 css-->
     <link rel="stylesheet" type="text/css" href="../../plugins/select2/dist/css/select2.min.css" />
     <!-- Datepicker css-->
-    <link rel="stylesheet" href="../../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
-    />
+    <link rel="stylesheet" href="../../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" />
     <!-- HandsonTable Css -->
     <link rel="stylesheet" href="../../plugins/handsontable/dist/handsontable.full.min.css">
     <link rel="stylesheet" type="text/css" href="assets/pages/data-table/extensions/responsive/css/responsive.dataTables.css">
     <!--Toastr css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />  
+    <link rel="stylesheet" type="text/css" href="assets/css/toastr.css" />
+    <!--FileInput css-->
+    <link rel="stylesheet" type="text/css" href="../../plugins/bootstrap-fileinput/css/fileinput.css" />
 </head>
+
 <body class="horizontal-icon" data-spy="scroll" data-target=".navbar" data-offset="200">
     <!-- Pre-loader start -->
     <div class="theme-loader">
@@ -54,7 +57,9 @@
         </div>
     </div>
     <!-- Pre-loader end -->
-    <!-- Pre-Header Start -->     <div class="header-section"></div>     <!-- Pre-Header Ends -->
+    <!-- Pre-Header Start -->
+    <div class="header-section"></div>
+    <!-- Pre-Header Ends -->
     <!-- Main-body start-->
     <div class="main-body">
         <div class="page-wrapper">
@@ -91,8 +96,17 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body p-15">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary">
+                                            <i class="icofont icofont-bullseye"></i>
+                                            <span class="btn-text">Trader View</span>
+                                        </button>
+                                    </div>
+                                </div>
                                 <div class="row m-t-15">
-                                    <div class="col-md-4 col-lg-3 col-sm-12">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                                        <label for="cusip">Cusip</label>
                                         <div class="input-group input-group-button">
                                             <input type="text" class="form-control" placeholder="Comma[,] separated list of Cusips">
                                             <span class="input-group-addon  bg-primary" id="basic-addon12">
@@ -103,7 +117,32 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-lg-3  col-sm-12 m-t-5">
+                                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                                        <label for="cusip">File</label>
+                                        <input tabindex="5" class="file fileinput" multiple type="file">
+                                        <a id="csv-format" style="font-size: 12px;color:grey;position:relative;top: -10px;" href="#" data-toggle="popover" data-popover="true"
+                                            data-html="true" title="CSV format of Data File" data-content="<table class='table table-striped'><thead><tr><td>Cusip</td><td>ISIN</td><td>Price</td>
+                                    <td>Duration<sup>*</sup></td><td>Spread Duration<sup>*</sup></td><td>OAS<sup>*</sup></td><td>Exp Date<sup>*</sup></td><td>Note</td></thead> <tbody><tr>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                </tr><tr>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                    <td>Val</td>
+                                </tr></tbody></table>">Format of file should be as per format</a>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 col-lg-3 m-t-30 m-md-0">
                                         <div class="checkbox-fade md-block fade-in-primary">
                                             <label>
                                                 <input type="checkbox" value="">
@@ -115,30 +154,30 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row m-t-15">
                                     <div class="col-md-12">
                                         <div id="agencyModalMap"></div>
                                     </div>
                                 </div>
                                 <div class="row m-t-15">
                                     <div class="col-md-12 text-right">
-                                            <button class="btn btn-danger">
-                                                    <i class="icofont icofont-trash"></i>
-                                                    <span class="btn-text">Delete</span>
-                                                </button>
-                                                <button class="btn btn-warning">
-                                                        <i class="icofont icofont-refresh"></i>
-                                                        <span class="btn-text">Reset</span>
-                                                    </button>
-                                                    <button class="btn btn-success">
-                                                            <i class="icofont icofont-hand-up"></i>
-                                                            <span class="btn-text">Submit</span>
-                                                        </button>
+                                        <button class="btn btn-danger">
+                                            <i class="icofont icofont-trash"></i>
+                                            <span class="btn-text">Delete</span>
+                                        </button>
+                                        <button class="btn btn-warning">
+                                            <i class="icofont icofont-refresh"></i>
+                                            <span class="btn-text">Reset</span>
+                                        </button>
+                                        <button class="btn btn-success">
+                                            <i class="icofont icofont-hand-up"></i>
+                                            <span class="btn-text">Submit</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,8 +209,13 @@
     <script type="text/javascript" src="../../plugins/select2/dist/js/select2.full.min.js"></script>
     <!--Toastr js-->
     <script type="text/javascript" src="assets/js/toastr.js"></script>
-    <!-- Custom js --> 
+    <!-- Custom js -->
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/pages-js/riskMeasureOverride.js"></script>
+    <!-- MultiSelect js -->
+    <script type="text/javascript" src="../../plugins/select2/dist/js/select2.full.min.js"></script>
+    <!--  FileInput js -->
+    <script type="text/javascript" src="../../plugins/bootstrap-fileinput/js/fileinput.js"></script>
 </body>
+
 </html>

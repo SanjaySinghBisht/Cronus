@@ -16,23 +16,21 @@ $(document).ready(function() {
     $(
       '<div class="tab-pane active" id="tab1" role="tabpanel">\
         <div class="row m-t-5">\
-        <div class="col-md-6 col-sm-12">\
+        <div class="col-lg-6 col-sm-12">\
         <div class="row">\
-        <div class="col-sm-12 col-md-4">\
+        <div class="col-sm-12 col-md-6 col-lg-4">\
         <label for="Database">Database</label>\
         <div tabindex="2" class="select2-dd"></div>\
-        </div> \
-        <div class="col-sm-12 col-md-4 form-group">\
+        </div>\
+        <div class="col-sm-12 col-md-6 col-lg-4 form-group">\
         <label for="Category">Category</label>\
         <input type="text" tabindex="3" class="form-control" placeholder="Category">\
-        </div> \
-        <div class="col-sm-12 col-md-4 form-group">\
+        </div>\
+        <div class="col-sm-12 col-md-6 col-lg-4 form-group">\
         <label for="Query Name">Query Name</label>\
         <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
         </div>\
-        </div>\
-        <div class="form-group text-right row">\
-        <div class="col-sm-12">\
+        <div class="col-sm-12 col-md-6 col-lg-12 m-t-30 text-right">\
         <button class="btn btn-info">\
         <i class="icofont icofont-hand-up"></i>\
         <span>Save Query</span>\
@@ -40,7 +38,7 @@ $(document).ready(function() {
         </div>\
         </div>\
         </div>\
-        <div class="col-md-6 col-sm-12">\
+        <div class="col-lg-6 col-sm-12">\
         <div class="form-group row">\
         <div class="col-sm-12">\
         <label for="Query">Query</label>\

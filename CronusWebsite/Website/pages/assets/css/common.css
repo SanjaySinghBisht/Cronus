@@ -245,10 +245,6 @@ a.handle, .color-picker {
     line-height: 34px;
 }
 
-.l-h-90 {
-    line-height: 90px;
-}
-
 .m-w-60 {
     min-width: 60px;
 }
@@ -762,6 +758,10 @@ textarea[class*="copyPaste"] {
 
 /*Popup*/
 
+.numkey-options .checkbox-fade {
+    display: block;
+}
+
 @media (max-width:480px) {
     .row-status .label-main {
         display: block;
@@ -788,9 +788,9 @@ textarea[class*="copyPaste"] {
 }
 
 @media (min-width:320px) and (max-width: 767px) {
-    .btn-div[class*="m-"] {
-        margin: auto;
-    }
+    .m-t-30{
+        margin-top: 0;
+    } 
     .sec-analytic-files-list .task-board {
         float: left;
         clear: both;
@@ -839,10 +839,7 @@ textarea[class*="copyPaste"] {
     .dt-responsive .container-fluid {
         padding-right: 0;
         padding-left: 0;
-    }
-    .l-h-90 {
-        line-height: inherit
-    }
+    } 
     .m-t-28 {
         margin: 0;
     }
@@ -892,5 +889,22 @@ textarea[class*="copyPaste"] {
     }
     .dt-bootstrap4 .child * {
         white-space: initial;
+    } 
+    .margin-0{
+        margin: 0 !important;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .numkey-options .checkbox-fade {
+        display: inline-block;
+    } 
+    .numkey-options .checkbox-fade {
+        display: inline-block;
+    }
+} 
+@media (min-width: 1025px) {
+    .m-xl-30{
+        margin-top: 30px; 
+    }
+} 
