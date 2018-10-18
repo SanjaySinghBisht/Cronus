@@ -16,14 +16,14 @@ $(document).ready(function() {
       $("#rejected-requestdd,#reason-comments").show();
       $("#summary-comments")
         .parent()
-        .addClass("col-lg-6 col-xl-4")
-        .removeClass("col-lg-9 col-xl-6");
+        .addClass("col-lg-6")
+        .removeClass("col-lg-12");
     } else {
       $("#rejected-requestdd,#reason-comments").hide();
       $("#summary-comments")
         .parent()
-        .removeClass("col-lg-6 col-xl-4")
-        .addClass("col-lg-9 col-xl-6");
+        .removeClass("col-lg-6")
+        .addClass("col-lg-12");
     }
   });
   var width = $(window).width();
