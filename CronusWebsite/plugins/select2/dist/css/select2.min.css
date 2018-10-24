@@ -3,17 +3,18 @@
     display: inline-block;
     margin: 0;
     position: relative;
-    vertical-align: middle
+    vertical-align: middle;
+    font-size: 13px;
 }
 
 .select2-container .select2-selection--single {
     box-sizing: border-box;
     cursor: pointer;
     display: block;
-    height: 35px;
-    padding: 0.38rem .75rem;
+    padding: 0.30rem .75rem;
     user-select: none;
-    -webkit-user-select: none
+    -webkit-user-select: none;
+    height: 28px;
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -175,7 +176,7 @@
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #444;
-    /* line-height: 28px */
+    line-height: 16px
 }
 
 .select2-container--default .select2-selection--single .select2-selection__clear {
@@ -191,7 +192,7 @@
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 26px;
     position: absolute;
-    top: 4px;
+    top: 1px;
     right: 1px;
     width: 20px
 }

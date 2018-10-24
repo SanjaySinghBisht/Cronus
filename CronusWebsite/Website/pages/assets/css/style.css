@@ -3716,6 +3716,10 @@ table.matrics-table tr:first-child td {
     margin-top: 20px
 }
 
+.m-t-24 {
+    margin-top: 24px
+}
+
 .m-t-25 {
     margin-top: 25px
 }
@@ -6335,8 +6339,8 @@ body.menu-sidebar .navbar-wrapper {
 .btn {
     border-radius: 2px;
     text-transform: capitalize;
-    font-size: 15px;
-    padding: 8px 19px;
+    font-size: 13px;
+    padding: 5px 10px;
     font-family: 'Open Sans'
 }
 
@@ -6926,11 +6930,11 @@ body.menu-sidebar .navbar-wrapper {
 }
 
 .form-group {
-    margin-bottom: 1.25em
+    margin-bottom: 1.00em
 }
 
 .form-group .form-control-lg {
-    font-size: 1.25em
+    font-size: 1.00em
 }
 
 .form-group .form-control-round {
@@ -6942,7 +6946,7 @@ body.menu-sidebar .navbar-wrapper {
 }
 
 .form-control {
-    font-size: 14px;
+    font-size: 13px;
     border-radius: 2px;
     border-width: 1px
 }
@@ -7479,7 +7483,7 @@ body.menu-sidebar .navbar-wrapper {
 }
 
 .input-group {
-    margin-bottom: 1.25em
+    margin-bottom: 1.00em
 }
 
 .input-group-addon {

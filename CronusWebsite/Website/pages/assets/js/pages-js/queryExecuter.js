@@ -30,7 +30,7 @@ $(document).ready(function() {
         <label for="Query Name">Query Name</label>\
         <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
         </div>\
-        <div class="col-sm-12 col-md-6 col-lg-12 m-t-30 text-right">\
+        <div class="col-sm-12 col-md-6 col-lg-12 m-t-24 text-right">\
         <button class="btn btn-info">\
         <i class="icofont icofont-hand-up"></i>\
         <span>Save Query</span>\
@@ -163,74 +163,56 @@ $(document).ready(function() {
       }
     })
     .start();
-  Highcharts.chart("result", {
-    exporting: {
-      enabled: false
-    },
-    chart: {
-      type: "bar"
-    },
-    title: {
-      text: "Rows Effected"
-    },
-    xAxis: {
-      categories: [
-        "tab1",
-        "tab2",
-        "tab3",
-        "tab4",
-        "tab5",
-        "tab6",
-        "tab7",
-        "tab8",
-        "tab9"
-      ],
-      title: {
-        text: null
+ 
+// Build the chart
+Highcharts.chart('top-query', {
+  chart: {
+      plotBackgroundColor: null,
+      plotBorderWidth: null,
+      plotShadow: false,
+      type: 'pie'
+  },
+  title: {
+      text: 'Browser market shares in January, 2018',
+      fontSize:'13px'
+  },
+  tooltip: {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+      pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          dataLabels: {
+              enabled: false
+          },
+          showInLegend: true
       }
-    },
-    yAxis: {
-      min: 0,
-      title: {
-        text: "Count (millions)",
-        align: "high"
-      },
-      labels: {
-        overflow: " ustify"
-      }
-    },
-    tooltip: {
-      valueSuffix: " hundred"
-    },
-    plotOptions: {
-      bar: {
-        dataLabels: {
-          enabled: true
-        }
-      }
-    },
-    legend: {
-      enabled: true,
-      layout: "vertical",
-      align: "right",
-      verticalAlign: "top",
-      x: -40,
-      y: 80,
-      floating: true,
-      borderWidth: 1,
-      backgroundColor:
-        (Highcharts.theme && Highcharts.theme.legendBackgroundColor) ||
-        "#FFFFFF",
-      shadow: true
-    },
-    credits: {
-      enabled: false
-    },
-    series: [
-      {
-        name: "Rows Effected",
-        data: [678, 345, 76, 876, 234, 987, 123, 90, 23, 678, 54]
-      }
-    ]
-  });
+  },
+  series: [{
+      name: 'Brands',
+      colorByPoint: true,
+      data: [{
+          name: 'Chrome',
+          y: 61.41,
+          sliced: true,
+          selected: true
+      }, {
+          name: 'Internet Explorer',
+          y: 11.84
+      }, {
+          name: 'Firefox',
+          y: 10.85
+      }, {
+          name: 'Edge',
+          y: 4.67
+      }, {
+          name: 'Safari',
+          y: 4.18
+      }, {
+          name: 'Other',
+          y: 7.05
+      }]
+  }]
+});
 });
