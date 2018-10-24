@@ -128,23 +128,23 @@ $(document).ready(function() {
   </div>\
   </div>\
   <div class="row">\
-  <div class="col-sm-12 col-md-6 col-lg-3 form-group">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2 form-group">\
   <label for="reason">Reason</label>\
   <input type="text" id="reason" value="test" tabindex="1" class="form-control" placeholder="Reason">\
   </div>\
-  <div class="col-sm-12 col-md-6 col-lg-3">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2">\
   <label for="Database">Database</label>\
   <div tabindex="2" class="select2-dd"></div>\
   </div>\
-  <div class="col-sm-12 col-md-6 col-lg-3 form-group">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2 form-group">\
   <label for="Category">Category</label>\
   <input type="text" tabindex="3" class="form-control" placeholder="Category">\
   </div>\
-  <div class="col-sm-12 col-md-6 col-lg-3 form-group">\
+  <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2 form-group">\
   <label for="Query Name">Query Name</label>\
   <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
   </div>\
-  <div class="col-sm-12 col-md-12 text-right form-group">\
+  <div class="col-sm-12 col-md-12 col-xl-4 m-xl-30 text-right form-group">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
   <span>Save</span>\
@@ -161,16 +161,16 @@ $(document).ready(function() {
   </div>\
   </div>\
   <div class="row">\
-  <div class="col-sm-12 form-group col-md-6 col-lg-3">\
+  <div class="col-sm-12 form-group col-md-6 col-lg-2">\
   <input type="text" tabindex="20" class="form-control" placeholder="Expected rows effected eg 100">\
   </div>\
   <div class="col-sm-12 col-md-6 col-lg-2">\
   <div tabindex="7" tabindex="21" class="select2-dd"></div>\
   </div>\
-  <div class="col-sm-12 col-md-12 col-lg-7 text-right">\
+  <div class="col-sm-12 col-md-12 col-lg-8 text-right">\
   <button class="btn btn-info">\
   <i class="icofont icofont-hand-up"></i>\
-  <span>Save Query</span>\
+  <span>Save</span>\
   </button>\
   <button type="button" tabindex="22" class="btn btn-success">\
   <i class="icofont icofont-play-alt-2"></i>\

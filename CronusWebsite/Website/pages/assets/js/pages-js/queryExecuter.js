@@ -30,7 +30,7 @@ $(document).ready(function() {
         <label for="Query Name">Query Name</label>\
         <input type="text" tabindex="4" class="form-control" placeholder="Query Name">\
         </div>\
-        <div class="col-sm-12 col-md-6 col-lg-12 m-t-30 text-right">\
+        <div class="col-sm-12 col-md-6 col-lg-12 text-right">\
         <button class="btn btn-info">\
         <i class="icofont icofont-hand-up"></i>\
         <span>Save Query</span>\
