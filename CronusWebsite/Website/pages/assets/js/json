@@ -1,4 +1,4 @@
-data = [{
+ data = [{
             "pagerDutyStartDate": "22-Oct-2018",
             "pagerDutyEndDate": "28-Oct-2018",
             "WeekDetails": [
@@ -7,210 +7,337 @@ data = [{
                     "date": "22-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Yogita Gupta",
+                                "email": "yogita.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Abhishek Mahajan",
+                                "email": "amahajan@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Yogita Gupta",
+                                "email": "yogita.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Abhishek Mahajan",
+                                "email": "amahajan@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 },
                 {
-                    "weekday": "Monday",
-                    "date": "22-Oct-2018",
+                    "weekday": "Tuesday",
+                    "date": "23-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                           "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 },
                 {
-                    "weekday": "Monday",
-                    "date": "22-Oct-2018",
+                    "weekday": "Wednesday",
+                    "date": "24-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                           "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 },
                 {
-                    "weekday": "Monday",
-                    "date": "22-Oct-2018",
+                    "weekday": "Thursday",
+                    "date": "25-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                           "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 },
                 {
-                    "weekday": "Monday",
-                    "date": "22-Oct-2018",
+                    "weekday": "Friday",
+                    "date": "26-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                           "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 },
                 {
-                    "weekday": "Monday",
-                    "date": "22-Oct-2018",
+                    "weekday": "Saturday",
+                    "date": "27-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                           "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 },
                 {
-                    "weekday": "Monday",
-                    "date": "22-Oct-2018",
+                    "weekday": "Sunday",
+                    "date": "28-Oct-2018",
                     "shifts": [
                         {
-                            "primaryMorningShiftName": "Shivani Puri",
-                            "primaryMorningShiftmobileNo": "8932892398",
-                            "primaryMorningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryMorningShiftName": "Shivani Puri",
-                            "secondaryMorningShiftmobileNo": "8932892398",
-                            "secondaryMorningShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primaryeveningShiftName": "Shivani Puri",
-                            "primaryeveningShiftmobileNo": "8932892398",
-                            "primaryeveningShiftEmail": "shivanipuri.pimco.com",
-                            "secondaryeveningShiftName": "Shivani Puri",
-                            "secondaryeveningShiftmobileNo": "8932892398",
-                            "secondaryeveningShiftEmail": "shivanipuri.pimco.com",
+                           "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         },
                         {
-                            "primarynightShiftName": "Shivani Puri",
-                            "primarynightShiftmobileNo": "8932892398",
-                            "primarynightShiftEmail": "shivanipuri.pimco.com",
-                            "secondarynightShiftName": "Shivani Puri",
-                            "secondarynightShiftmobileNo": "8932892398",
-                            "secondarynightShiftEmail": "shivanipuri.pimco.com",
+                            "primary": {
+                                "name": "Sanjay Gupta",
+                                "email": "sanjay.gupta@pimco.com",
+                                "mobileNo": "7838133976"
+                            },
+                            "Secondary": {
+                                "name": "Kiran Mahajan",
+                                "email": "kiran@de.pimco.com",
+                                "mobileNo": "9899155735"
+                            },
+                            "startTime" :"8:30",
+                            "endTime" :"18:00",
                         }
                     ]
                 }
             ]
         }]
+        
