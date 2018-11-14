@@ -493,6 +493,9 @@ input.htCheckboxRendererInput:checked:after {
 .ft-20 {
     font-size: 20px;
 }
+.ft-12 {
+    font-size: 12px;
+}
 
 .full-screen {
     position: absolute;
@@ -761,7 +764,7 @@ textarea[class*="copyPaste"] {
 .numkey-options .checkbox-fade {
     display: block;
 }
-
+ 
 @media (max-width:480px) {
     .row-status .label-main {
         display: block;

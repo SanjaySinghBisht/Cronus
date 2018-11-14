@@ -91,390 +91,412 @@
                         </button>
                     </div>
                 </div>
-                <div class="panel-group m-t-15 impact-study-details" id="accordion" role="tablist" aria-multiselectable="true">
-
-                    <!-- <div class="panel panel-default">
-                        <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
-                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                <a role="button" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="icon icon-minus-sign pull-right"></i>
-                                    Filters
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-body p-15">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-3 col-lg-3">
-                                        <div class="">
-                                            <label for="runid">Status</label>
-                                            <div class="select2-dd"></div>
-                                        </div>
+                <div class="row m-t-15">
+                    <div class="col-md-12">
+                        <div class="impact-study-details">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading  bg-lightblue" role="tab" id="headingOne">
+                                        <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            <a role="button" aria-expanded="true" aria-controls="collapseOne">
+                                                <i class="icon icon-minus-sign pull-right"></i>
+                                                User Dashboard
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div class="col-xs-12 col-md-3 col-lg-3">
-                                        <div class="">
-                                            <label for="priceDate" class="required-field">From</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control date floating-label" placeholder="Price Date">
-                                                <span class="input-group-addon">
-                                                    <i class="icofont icofont-ui-calendar"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-3 col-lg-3">
-                                        <div class="">
-                                            <label for="priceDate" class="required-field">To</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control date floating-label" placeholder="Price Date">
-                                                <span class="input-group-addon">
-                                                    <i class="icofont icofont-ui-calendar"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-3 col-lg-3 l-h-90">
-                                        <button class="btn btn-primary">Filter</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
-                            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                <a role="button" aria-expanded="true" aria-controls="collapseTwo">
-                                    <i class="icon icon-minus-sign pull-right"></i>
-                                    User Dashboard Records
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="panel-body p-15">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="table-responsive">
-                                            <div class="dt-responsive table-responsive">
-                                                <table id="basic-btn-1" class="export-btn-table table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Sr. No.</th>
-                                                            <th>ID</th>
-                                                            <th>TITLE</th>
-                                                            <th>VALUE</th>
-                                                            <th>STATUS</th>
-                                                            <th>REQUESTOR</th>
-                                                            <th>DELIVERY DATE</th>
-                                                            <th>SCHEDULED DATE</th>
-                                                            <th>EXPECTED DELIVERY DATE</th>
-                                                            <th class="text-center all">ACTION</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Title ID</td>
-                                                            <td>CBO-BKCL-ID</td>
-                                                            <td>8128921889AH889J9</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td>12/12/2018</td>
-                                                            <td class="action-icon text-center">
-                                                                <a href="javascript:;" data-modal="modal-12" class="m-r-15 md-trigger crm-action-edit text-muted">
-                                                                    <i class="icofont icofont-ui-edit"></i>
-                                                                </a>
-                                                                <a href="javascript:;" class="crm-action-delete text-muted">
-                                                                    <i class="icofont icofont-delete-alt"></i>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="impact-study-form">
-                    <div class="panel-group m-t-15" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading  bg-lightblue" role="tab" id="headingThree">
-                                <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                    <a role="button" aria-expanded="true" aria-controls="collapseThree">
-                                        <i class="icon icon-minus-sign pull-right"></i>
-                                        Impact Study Request Form
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingThree">
-                                <div class="panel-body p-15">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="Title" class="required-field">Title</label>
-                                                <input class="form-control" placeholder="Title" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="Summary of Change" class="required-field">Summary of Change</label>
-                                                <textarea class="form-control input-textarea" rows="2" cols="3" placeholder="Summary of Change"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="Requester Team" class="required-field">Requester Team</label>
-                                                <div class="select2-dd"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="Requester" class="required-field">Requester</label>
-                                                <div class="select2-dd"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="priceDate" class="required-field">Expected Prod Release Date</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control date floating-label" placeholder="Expected Prod Release Date">
-                                                    <span class="input-group-addon">
-                                                        <i class="icofont icofont-ui-calendar"></i>
-                                                    </span>
+                                    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body p-15">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <label for="status">Status</label>
+                                                    <div class="select2-dd"></div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="priceDate" class="required-field">Requested Impact Report Delivery Date</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control date floating-label" placeholder="Requested Impact Report Delivery Date">
-                                                    <span class="input-group-addon">
-                                                        <i class="icofont icofont-ui-calendar"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-md-3 col-lg-3">
-                                            <div class="">
-                                                <label for="Requester" class="required-field">Expected Comparison Report</label>
-                                                <div class="select2-dd"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="database-snapshot">
-                                                <div class="row">
-                                                    <div class="col-sm-12 col-md-6">
-                                                        <label for="Current Price Date in Delta" class="required-field">Current Price Date in Delta <small class="form-text text-muted">Max character length is 100 characters</small></label>
-                                                        
-                                                        <input class="form-control" readonly placeholder="Title" value="08/21/2018" />
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <div class="form-group">
+                                                        <label class="required-field" for="pricedate">From</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                            <span class="input-group-addon">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </span>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-6 l-h-90">
-                                                        <div class="checkbox-fade md-block fade-in-primary">
-                                                            <label>
-                                                                <input type="checkbox" value="">
-                                                                <span class="cr">
-                                                                    <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
-                                                                </span>
-                                                                <span class="text-inverse">Latest snap from production</span>
-                                                            </label>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <div class="form-group">
+                                                        <label class="required-field" for="pricedate">To</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control date floating-label" placeholder="Price Date">
+                                                            <span class="input-group-addon">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 m-t-30 margin-0 text-right">
+                                                    <button id="status" class="btn btn-primary waves-effect" data-toggle="modal" data-target="#default-Modal">
+                                                        <i class="icofont icofont-search"></i>
+                                                        <span class="btn-text">Filter</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table-responsive">
+                                                                    <div class="dt-responsive table-responsive">
+                                                                        <table id="basic-btn-1" class="export-btn-table table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>GROUP_ID</th>
+                                                                                    <th>SID</th>
+                                                                                    <th>DESCRIPTION</th>
+                                                                                    <th>FREQUENCY_ID</th>
+                                                                                    <th>PARENT_ID</th>
+                                                                                    <th>STRKEY1</th>
+                                                                                    <th>STRKEY2</th>
+                                                                                    <th>STRKEY3</th>
+                                                                                    <th>STRKEY4</th>
+                                                                                    <th>STRKEY5</th>
+                                                                                    <th>NUMKEY1</th>
+                                                                                    <th>NUMKEY2</th>
+                                                                                    <th>NUMKEY3</th>
+                                                                                    <th>NUMKEY4</th>
+                                                                                    <th>NUMKEY5</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>981298</td>
+                                                                                    <td>SDHSD122</td>
+                                                                                    <td>Lorem ipsumLorem ipsumLorem ipsumLorem
+                                                                                        ipsum
+                                                                                    </td>
+                                                                                    <td>CBO-BKCL-ID</td>
+                                                                                    <td>87877JHHJJH8</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>STRKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                    <td>NUMKEY</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row m-t-10">
+                                                            <div class="col-md-12 text-right">
+                                                                <button class="btn btn-warning">
+                                                                    <i class="icofont icofont-refresh"></i>
+                                                                    <span class="btn-text">Reset</span>
+                                                                </button>
+                                                                <button class="btn btn-primary">
+                                                                    <i class="icofont icofont-hand-up"></i>
+                                                                    <span class="btn-text">Submit</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="impact-study-form">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading  bg-lightblue" role="heading">
+                                        <h4 class="panel-title">
+                                            <a role="button">
+                                                Impact Study Request Form
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div>
+                                        <div class="panel-body p-15">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <div class="form-group">
+                                                        <label class="required-field" for="Title">Title</label>
+                                                        <input type="text" class="form-control" placeholder="Enter Title">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <div class="form-group">
+                                                        <label class="required-field" for="summary">Summary of Change</label>
+                                                        <input type="text" class="form-control" placeholder="Summary of Change">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <label class="required-field" for="requestor-team">Requestor Team</label>
+                                                    <div class="select2-dd"></div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <label class="required-field" for="requestor">Requestor</label>
+                                                    <div class="select2-dd"></div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <div class="form-group">
+                                                        <label class="required-field" for="pricedate">Expected Prod Release Date</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control date floating-label" placeholder="Expected Prod Release Date">
+                                                            <span class="input-group-addon">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <div class="form-group">
+                                                        <label class="required-field" for="pricedate">Requested Impact Report Delivery Date</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control date floating-label" placeholder="Requested Impact Report Delivery Date">
+                                                            <span class="input-group-addon">
+                                                                <i class="icofont icofont-ui-calendar"></i>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <label class="required-field" for="requestor">Expected Comparison Report</label>
+                                                    <div class="select2-dd"></div>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3">
+                                                    <label class="required-field" for="requestor">Fresh Database Snap</label>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <input type="text" class="form-control" placeholder="12/12/2018" readonly />
+                                                        </div>
+                                                        <div class="col-md-12 m-t-5">
+                                                            <div class="checkbox-fade fade-in-primary">
+                                                                <label>
+                                                                    <input type="checkbox" value="">
+                                                                    <span class="cr">
+                                                                        <i class="cr-icon icofont icofont-ui-check txt-primary"></i>
+                                                                    </span>
+                                                                    <span class="text-inverse ft-12">Latest snap from prodcution</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -483,9 +505,57 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading  bg-lightblue" role="tab" id="headingTwo">
+                                                <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                    <a role="button" aria-expanded="true" aria-controls="collapseTwo">
+                                                        <i class="icon icon-minus-sign pull-right"></i>
+                                                        Artifact/JIRA fro Impact Study
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body p-15 ">
+                                                    <div class="add-artifact-jira">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="select2-dd"></div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input tabindex="1" type="text" placeholder="Artifact/JIRA ID" class="form-control">
+                                                                <small class="form-text text-muted">Please provide space separated artifacts/JIRA for Impact
+                                                                    Study
+                                                                </small>
+                                                            </div>
+                                                            <div class="col-md-2 text-right">
+                                                                <button class="btn btn-danger">
+                                                                    <i class="icofont icofont-trash"></i>
+                                                                    <span class="btn-text">Delete</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 text-right">
+                                                            <button class="btn btn-success" id="add-artifact-jira">
+                                                                <i class="icofont icofont-plus"></i>
+                                                                <span class="btn-text">Add</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
