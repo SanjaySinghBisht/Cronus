@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var html =
-'<div class="row"><div class="col-md-4">\
+    '<div class="row"><div class="col-md-4">\
 <div class="select2-dd"></div>\
 </div>\
 <div class="col-md-6">\
@@ -16,7 +16,7 @@ $(document).ready(function() {
 </div></div>';
   var width = $(window).width();
   if (width <= 768) {
-    $("#basic-btn-1,#basic-btn-2,#basic-btn-3").DataTable({
+    $("#basic-btn-1").DataTable({
       responsive: true,
       dom: "Bfrtip",
       buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"],
@@ -27,7 +27,7 @@ $(document).ready(function() {
       }
     });
   } else {
-    $("#basic-btn-1,#basic-btn-2,#basic-btn-3").DataTable({
+    $("#basic-btn-1").DataTable({
       dom: "Bfrtip",
       buttons: ["copy", "csv", "excel", "pdf", "print", "pageLength"],
       responsive: true
@@ -37,7 +37,7 @@ $(document).ready(function() {
     weekStart: 0,
     time: false
   });
-  $("#request-impact-study").on("click", function() {
+  $("#request-impact-study").on("click", function () {
     if (
       $(this)
         .find("span")
@@ -54,14 +54,46 @@ $(document).ready(function() {
     $(".impact-study-details").toggle();
     $(".impact-study-form").toggle();
   });
-  $("#add-artifact-jira").on("click", function() {
+  $("#add-artifact-jira").on("click", function () {
     $(".add-artifact-jira").append(html);
     $(".select2-dd").select2({
       placeholder: "Select",
       allowClear: true
     });
   });
-  $(".add-artifact-jira button.btn-danger").on("click", function() {
+  $(document).on('click', '.add-artifact-jira button.btn-danger', function () {
+    debugger;
     $(this).parent().parent().remove();
   });
+  $('#model-calibration').on("click", function () {
+    debugger;
+    if ($(this).prop("checked") == true) {
+      $(".model-calibration-dd").show();
+    }
+    else {
+      $(".model-calibration-dd").hide();
+    }
+  });
+  $(".model-run-verification input[type='radio']").on("click", function () {
+    var current_id = $(".model-run-verification input[type='radio']:checked").attr("data-attr-id");
+    $(".model-run-dd .sections").hide();
+    $(".model-run-dd div[id='"+current_id+"']").show();
+   
+});
+$(".model-for-impact-study input[type='radio']").on("click", function () {
+  var current_id1 = $(".model-for-impact-study input[type='radio']:checked").attr("data-attr-id");
+  $(".model-for-impact-study-sections .sections").hide();
+  $(".model-for-impact-study-sections div[id='"+current_id1+"']").show();
+});
+$('[data-toggle="popover"]').popover({
+  trigger: "click"
+});
+var clients_table = $('#basic-btn-1').DataTable();
+    $('#add-risk-measure').on( 'click', function () {
+        clients_table.row.add( [ 'Fiona White'] ).draw();
+    } );
+     
+    $('.deleteRow').on( 'click', function () {
+        alert('test');
+    });
 });

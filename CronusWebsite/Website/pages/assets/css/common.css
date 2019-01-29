@@ -735,6 +735,9 @@ textarea[class*="copyPaste"] {
 /*pastel colors*/
 
 /*Popup*/
+.md-content-scroll .form-control{
+    box-sizing: border-box;
+}
 
 .md-content-scroll {
     max-height: 380px;
@@ -764,7 +767,10 @@ textarea[class*="copyPaste"] {
 .numkey-options .checkbox-fade {
     display: block;
 }
- 
+
+.model-calibration-dd{
+    display: none;
+}
 @media (max-width:480px) {
     .row-status .label-main {
         display: block;
